@@ -1639,7 +1639,9 @@ footer {
         vertical-align: top; 
       }
       h2.small-4k {
-       font-size: rem-calc(25);
+       font-size: rem-calc(41.5);
+       line-height: rem-calc(39);
+       margin-left: 184px !important;
       }
       .app-slide h2 {
         font-size: rem-calc(73);
@@ -1706,6 +1708,12 @@ footer {
         }
       }
 
+    }
+
+    @media screen and (max-width: 1016px){
+      #hero-slider h2.small-4k {
+        margin-left: 18% !important;
+      }
     }
 
     @media screen and (max-width: 1024px){
