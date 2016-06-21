@@ -1,0 +1,194 @@
+.editing-header{
+    // background-color:black;
+    background-image:url(../img/editing/how-to-web-lrg-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top:88px;
+    padding-bottom:90px;
+    p{
+        color:white;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: .75rem;
+    }
+    .columns{
+        // padding:0px;
+    }
+
+
+    .header-text{
+        float: right !important;
+    }
+}
+
+.editing-main{
+    margin-top:35px;
+    h2{
+        text-transform: uppercase;
+        color:black;
+        text-align: center;
+        border-top:1px solid black;
+        border-bottom:1px solid black;
+        padding-top:10px;
+        padding-bottom:10px;
+        margin-top:0px;
+        margin-bottom:20px;
+        font-weight: bold;
+
+        span{
+            font-size:44px;
+            font-weight: normal;
+        }
+    }
+    h3{
+        color:black;
+        text-transform: uppercase;
+    }
+    .columns{
+        padding:0px;
+        h3{
+            font-size: 18px;
+            font-weight: bold;
+
+        }
+    }
+    p{
+        font-size: 15px;
+        line-height: 17px;
+        margin-bottom: .75rem;
+
+    }
+    .slick-slide, .slick-slider{
+        background-color:white !important;
+    }
+
+    nav .small-block-grid-3 li{
+        text-align: center;
+        a{
+            h3{
+            color:black;
+            text-transform: uppercase;
+            }
+        }
+    }
+    .active-nav{
+        h3{color:$primary-color !important;}
+    }
+
+
+    .custom-dots{
+        position: relative;
+        bottom: -15px;
+        list-style: none;
+        display: table !important;
+        text-align: center;
+        padding: 0;
+        width: auto;
+        padding-right: 0;
+        margin: 0px auto;
+
+        li{
+            float: left;
+            font-size: 25px;
+            position: relative;
+            display: block;
+            height: 5px;
+            width: 5px;
+            margin: 0 5px;
+            padding: 0;
+            cursor: pointer;
+
+
+            button{
+                opacity: .35;
+                border-radius: 100%;
+                background: transparent;
+                display: block;
+                height: 5px;
+                width: 5px;
+                outline: none;
+                line-height: 0;
+                font-size: 0;
+                background-color: $primary-color;
+                padding: 5px;
+                cursor: pointer;
+            }
+
+        }
+        li.custom-active button{
+            opacity: 1;
+            background-color: $primary-color;
+
+        }
+    }
+    .editing-slider, .effects-slider, .share-slider{
+        // display: none;
+        opacity: 0;
+    }
+}
+
+
+@media only screen and (max-width: 1025px){
+
+    .editing-header{
+        background-image:url(../img/facets-mobile.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top:20px;
+        padding-bottom:1px;
+
+
+        .header-text{
+            float: none !important;
+            clear: both;
+        }
+        .mobile-hands{
+            margin: 30px auto 0px auto;
+            display: block;
+            vertical-align: bottom;
+        }
+    }
+
+    .editing-main{
+        .row{
+            padding-left:1.5rem;
+            padding-right:1.5rem;
+        }
+        h2 {
+              font-size: 1.5rem;
+              span{
+                  font-size: 1.25rem;
+              }
+        }
+        .columns{
+            margin-top:10px;
+            margin-bottom:20px;
+
+        }
+
+        .custom-dots{
+            bottom:0;
+        }
+        .slick-slider{
+            padding-bottom:0px;
+        }
+        nav{
+            .small-block-grid-3{
+
+            }
+        }
+        nav .small-block-grid-3 li{
+            text-align: center;
+                padding:0px 0px 0px 0px;
+
+            a{
+                h3{
+                font-size:15px;
+                color:black;
+                text-transform: uppercase;
+                }
+            }
+        }
+
+    }
+}

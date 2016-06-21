@@ -1,0 +1,513 @@
+#au-home{
+
+
+    background-color:$white;
+    .container-fluid .page_inner:last-of-type{
+        display: none;
+    }
+    .columns{
+      padding-left:15px !important;
+      padding-right: 15px !important;
+    }
+    .container{
+      max-width: none;
+    }
+    .row{
+      max-width: none;
+    }
+    .no-padding{
+      padding:0px !important;
+  }
+    .video-container {
+  height: 655px;
+  min-height: 655px;
+  max-height: 655px;
+  overflow: hidden;
+}
+
+.video-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.video-overlay {
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  height: 655px;
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.65);
+  text-align: left;
+
+  .cta-buttons{
+      clear: both;
+      float:none;
+      display: table !important;
+  }
+  .container {
+    margin-top: 130px;
+    .btn-inverse{
+        background-color: transparent !important;
+        color:$white !important;
+        // padding-left: 20px;
+        // padding-right: 20px;
+    }
+    p {
+        clear:both; float:none;;
+        margin-bottom:60px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 27px;
+
+    }
+  }
+  h1 {
+    font-family: "FlySans-", Arial, sans-serif;
+    color: $primary-color;
+    line-height: 1.1;
+    font-size: 47px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  p {
+
+    line-height: 1.3;
+    font-family: "FlySans-", Arial, sans-serif;
+    color: $white;
+  }
+
+  a {
+    // background-color: transparent;
+    border: 2px solid #78be20;
+    color: $white;
+    font-family: "FlySans-Light", Arial, sans-serif;
+    width: 200px;
+    margin-right: 10px;
+    text-transform: uppercase;
+
+    &:hover {
+      background: #78be20;
+    }
+  }
+}
+    img{
+    }
+    .subnav-360{
+        margin-bottom: 0px;
+    }
+    h2{
+        font-family: "FlySans-Medium",Helvetica,Arial,sans-serif;
+        text-align: center;
+        margin-bottom: 45px;
+    }
+    .mount-img{
+        width:100%;
+        margin-bottom:75px;
+    }
+
+    .center{
+        margin: 0px auto;
+        clear: both;
+        float: none;
+        padding-left:35px;
+        padding-right: 35px;
+        margin-bottom: 55px;
+        display: table;
+
+    }
+    .accessories-btn{
+        margin-bottom: 0px;
+    }
+
+    .product-block{
+        margin:0px auto;
+        text-align: center;
+        padding-top:75px;
+        background-image: url( "../img/homepage_au/facets_light.jpg");
+        border-top: $primary-color 35px solid;
+        background-repeat: no-repeat;
+        background-size: cover;
+        .accessories-drop{
+            float: none;
+            clear: both;
+            margin: 0px auto;
+            list-style:none;
+            padding:0px;
+            position:relative;
+            height:60px;
+            color:white;
+            width:210px;
+            .dropdown-toggle{
+                width:210px;
+            }
+        }
+        h3{
+            font-family: "FlySans-Medium",Helvetica,Arial,sans-serif;
+            color:$primary-color;
+            font-size: 47px;
+        }
+        .product-img{
+            max-width: 400px;
+            width:100%;
+            margin-bottom: 35px;
+        }
+        .fly-camera{
+            max-width:337px;
+            margin-left: -60px;
+        }
+        .mounts-img{
+            margin-top: 53px;
+            margin-left: -70px;
+        }
+        p{
+            font-size: 27px;
+            line-height: 1.2;
+            color:$white;
+            font-family: "FlySans-",Helvetica,Arial,sans-serif;
+            margin-bottom: 30px;
+
+        }
+        .btn{
+            text-transform: uppercase;
+        }
+    }
+    .product-grid{
+        clear: both;
+        float: none;
+
+        img{
+            width: auto !important;
+        }
+        ul{
+            padding-left: 0px;
+            li{
+                list-style:none;
+            }
+        }
+    }
+    .product-grid-home{
+
+        #product-intro{
+            background-image: url('../img/homepage_au/handlebar_mount_bg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow: hidden;
+            min-height: 485px;
+            width: 100%;
+
+            .container{
+                margin-top: 100px;
+                margin-bottom: 100px;
+                @media screen and (max-width:767px){
+                    padding-left: 25px !important;
+                    padding-right: 25px !important;
+                }
+            }
+            h3{
+                font-family: "FlySans-Medium",Helvetica,Arial,sans-serif;
+                color:$primary-color;
+                font-size: 45px;
+                line-height: .9;
+                margin-bottom: 20px;
+            }
+            p{
+                font-size: 18px;
+                line-height: 1.2;
+                color:$white;
+                font-family: "FlySans-",Helvetica,Arial,sans-serif;
+            }
+        }
+        .product-promotions{
+            h2{
+                color:$primary-color;
+                font-size: 47px;
+            }
+        }
+
+        .btn-contain{
+            width: auto;
+            display: table;
+            margin: 0px auto;
+            margin-bottom: 55px;
+            button{
+                padding-left: 35px;
+                padding-right: 35px;
+            }
+        }
+    }
+
+    .editing-sharing{
+        background-color:$primary-color;
+        color:$white;
+        padding-top:80px;
+        padding-bottom: 80px;
+        clear:both; float:none;;
+        .center-block{
+          clear:both; float:none;;
+            h3{
+                font-size: 49px;
+                font-family: "FlySans-",Helvetica,Arial,sans-serif;
+                color:$white;
+
+            }
+            p{
+                font-size: 27px;
+                font-family: "FlySans-",Helvetica,Arial,sans-serif;
+
+            }
+        }
+    }
+    .apps-section{
+        display:table;
+        margin:0px auto;
+
+        margin-bottom: -7px;
+        max-width: 100%;
+        padding: 0px;
+        h3{
+            font-family: "FlySans-Medium",Helvetica,Arial,sans-serif;
+            font-size: 45px;
+            line-height: 1;
+            color:$black;
+        }
+        p{
+            font-size: 18px;
+            line-height: 1;
+        }
+        img{
+            width: 100%;
+        }
+        .app-content{
+            margin:0px auto;
+            padding-top: 60px;
+            float: none;
+            clear: both;
+            background-color: transparent !important;
+
+            #macosx{
+                margin-bottom: 10px;
+            }
+            .apps-button{
+                max-width: 150px;
+                text-transform: uppercase;
+            }
+            p{
+                color:#333 !important;
+            }
+        }
+        .desktop-app{
+            @media screen and (max-width:767px){
+                padding-left: 40px !important;
+            }
+        }
+    }
+    .center-block {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #socialBar{
+      .row {
+        margin: 0 auto;
+        max-width: 62.5rem;
+        width: 100%;
+        input[type=email]{
+          background-color:#fff;
+          color: rgba(0,0,0,.75);
+        }
+      }
+    }
+    .align-center{
+      text-align: center;
+    }
+// == Responsive Fixes ==
+@media (min-width: 1200px){
+  .container {
+    width: 1170px;
+  }
+}
+@media screen and (max-width:1999px){
+    .app-content{
+        padding-top:15px;
+    }
+}
+@media screen and (max-width:1159px){
+
+        .apps-section{
+            .app-content{
+                .btn{
+                    float: left !important;
+                    clear:none;
+
+                }
+                #macosx{
+                    margin-right: 5px;
+                }
+                br{
+                    display: none;
+                }
+            }
+        }
+
+}
+@media screen and (max-width:1199px){
+
+        .mounts-img{
+            margin-top:21px !important;
+        }
+
+}
+@media screen and (max-width:1025px){
+    #socialBar{
+      .row {
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+
+      }
+    }
+    #product-intro  .container{
+        max-width: 750px;
+        width:100%;
+      }
+        .video-overlay{
+            .center-block{
+
+                width: auto !important;
+                .watch-btn{
+                    margin-right: 0px;
+                }
+            }
+        }
+        .editing-sharing{
+            padding-left: 10px;
+            padding-right:10px;
+        }
+        .accessories-btn{
+            margin-bottom: 75px;
+        }
+        .apps-button{
+            margin-bottom:25px;
+        }
+        .fly-camera{
+            margin-bottom:50px;
+        }
+        .apps-section{
+            .app-content{
+                padding-bottom: 60px;
+                padding-left: 25px !important;
+                padding-right:25px !important;
+                // display: inline-block;
+            }
+            .desktop-app{
+                margin-bottom: 75px;
+            }
+            #windows{
+                margin-bottom: 75px;
+            }
+        }
+
+}
+@media screen and (max-width:768px){
+
+        .editing-sharing{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+      .video_bg  .container{
+          width: 750px;
+        }
+}
+@media screen and (min-width:768px){
+      .video_bg  .container{
+          width: 750px;
+        }
+}
+@media screen and (max-width:688px){
+
+        .video-container{
+            .video-overlay{
+                h1{
+                    font-size: 45px;
+                }
+                p{
+                    font-size:22px;
+                }
+                .cta-buttons{
+                    .btn{
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+        .editing-sharing{
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+
+}
+@media screen and (max-width:500px){
+
+        .product-promotions{
+            h2{
+                padding:0px 15px !important;
+                line-height: 1;
+            }
+        }
+
+}
+
+@media screen and (max-width:469px){
+
+        .video-overlay{
+            .cta-buttons{
+                a{
+                    display: table;
+                    margin: 5px auto;
+                    clear: both;
+                    float: none;
+                }
+            }
+        }
+
+}
+
+@media screen and (max-width:408px){
+
+        .video-overlay{
+            .container{
+                margin-top: 40px;
+            }
+        }
+        .product-block,#product-intro,.editing-sharing{
+            h3{
+                line-height: 1 !important;
+            }
+        }
+
+}
+
+@media screen and (max-width:350px){
+
+        .video-overlay{
+            p{
+              margin-bottom:20px !important;
+            }
+            .container{
+                margin-top: 40px;
+                .cta-buttons{
+                    .watch-btn{
+                        margin-bottom: 100px;
+                    }
+                }
+            }
+        }
+
+
+}
+
+
+
+
+}

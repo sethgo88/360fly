@@ -1,0 +1,72 @@
+#overlayMes {
+  display: none;
+}
+.overlayMessage {
+  width: 80%;
+  height: 50%;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  text-align: center;
+  h1 {
+  font-size: 4rem;
+  }
+  .overlayContainer {
+    position: relative;
+    top: 50%;
+    transform: translateY(-65%);
+  }
+  .dragMessage {
+  	display: block;
+  	border-radius: 1000px;
+  	margin: 0 auto;
+  	margin-top: -4px;
+  	p {
+  		background-color: rgba(0, 0, 0, 0.8);
+  		border-radius: 1000px;
+  		display: inline;
+  		font-size: 16px!important;
+  		margin-bottom: 0;
+  		padding-bottom: 0;
+  		color: #82C341;
+  		font-family: "FlySans-Medium";
+  		padding:16px 26px 16px 26px;
+  	}
+  	.dragHome {
+  		color: white;
+  		font-size: 40px;
+  		position: relative;
+  		padding-left: 10px;
+  		top: 25px;
+  	}
+  }
+}
+
+
+/* -- Responsive Queries -- */
+/* -- Desktop -- */
+@media (min-width:1025px) and (max-width:9999px) {
+  .overlayMessage h1 {
+    font-size: 4rem;
+  }
+}
+
+/* -- Responsive Queries -- */
+/* -- Tablet -- */
+@media (min-width:642px) and (max-width:1024px) {
+  .overlayMessage h1 {
+    font-size: 3rem;
+  }
+}
+
+/* -- Responsive Queries -- */
+/* -- Mobile -- */
+@media (min-width:0px) and (max-width:641px) {
+  .overlayMessage h1 {
+    font-size: 2rem;
+  }
+  .dragMessage {
+    display: none!important;
+  }
+}

@@ -1,0 +1,146 @@
+@import "variables";
+@import "mixins";
+.product-promotions {
+  padding-top: 30px !important;
+  clear: both;
+  float:none;
+  background-color: @white;
+  background-image: url( "../../static/public/img/slider-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:contain;
+
+  h2{
+    text-align: center;
+    margin-bottom: 45px;
+    font-size: 38px;
+    color:@primary-color;
+    font-family: "FlySans-Medium", Arial, sans-serif;
+    font-weight: 900;
+    margin-left: 15px;
+  }
+  .slide-header-contain{
+    display: table;
+    margin:0px auto;
+    img{
+      position: relative;
+      z-index: 99999;
+      margin-top: -45px;
+    }
+  }
+}
+.productSlider{
+  clear:both;
+  float:none;
+  margin-bottom: 60px;
+.slick-slide img{
+  width:100%;
+}
+.slick-current{
+  .product_pod{
+    transform: scale(1);
+    img{
+      -webkit-filter: blur(0px);
+      filter: blur(0px);
+    }
+    .product_price{
+      opacity: 1;
+    }
+  }
+}
+
+  .product_pod{
+    height: auto !important;
+    padding: 0px;
+    margin:0px;
+    transform: scale(.75);
+    transition: all 300ms ease !important;
+    img{
+      -webkit-filter: blur(2px);
+      filter: blur(2px);
+      transition: all 300ms ease !important;
+
+    }
+    .product_price{
+      position: relative;
+      opacity: 0;
+      transition: all 300ms ease !important;
+      .product-title{
+        a{
+          font-size: 20px;
+          color:@silver_chalice;
+          text-transform: uppercase;
+          font-family: "FlySans-",Helvetica,Arial,sans-serif;
+
+        }
+      }
+    }
+    p{
+      margin-bottom: 0 !important;
+    }
+    .price_color{
+      font-size: 20px !important;
+    line-height: 1.4 !important;
+    font-weight: 500 !important;
+    }
+    .star-rating{
+      small{
+        display: none;
+
+      }
+    }
+      @media screen and (min-width:1026px){
+        .thumbnail{
+          width: 100%;
+        }
+      }
+      @media screen and (max-width:1025px){
+        .thumbnail{
+          margin:0px auto;
+        }
+
+      }
+      @media screen and (max-width:450px){
+        .thumbnail{
+        width:100%;
+        }
+      }
+    .thumbnail{
+      border-radius: 0px;
+    }
+
+  }
+  .slick-prev, .slick-next {
+
+    position: absolute;
+    top: 30%;
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-top: -10px;
+    padding: 0;
+    cursor: pointer;
+    border: 2px solid @silver_chalice;
+    outline: none;
+    background: transparent;
+    font-size: 35px;
+    color:@silver_chalice;
+    text-align: center;
+    border-radius: 100px;
+  }
+  .slick-next {
+      right: -25px;
+      &:before{
+        margin-left: 5px;
+      }
+  }
+  .slick-prev {
+    left: -25px;
+    &:before{
+      margin-left: -5px;
+    }
+  }
+
+
+
+}

@@ -1,0 +1,107 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+*/
+$facebook_icon_36-x: 0px;
+$facebook_icon_36-y: 0px;
+$facebook_icon_36-offset-x: 0px;
+$facebook_icon_36-offset-y: 0px;
+$facebook_icon_36-width: 36px;
+$facebook_icon_36-height: 36px;
+$facebook_icon_36-total-width: 103px;
+$facebook_icon_36-total-height: 276px;
+$facebook_icon_36-image: '../img/spritesheet.png';
+$facebook_icon_36: 0px 0px 0px 0px 36px 36px 103px 276px '../img/spritesheet.png';
+$fly-logo-x: 0px;
+$fly-logo-y: 108px;
+$fly-logo-offset-x: 0px;
+$fly-logo-offset-y: -108px;
+$fly-logo-width: 103px;
+$fly-logo-height: 40px;
+$fly-logo-total-width: 103px;
+$fly-logo-total-height: 276px;
+$fly-logo-image: '../img/spritesheet.png';
+$fly-logo: 0px 108px 0px -108px 103px 40px 103px 276px '../img/spritesheet.png';
+$fly-symbol-48-x: 0px;
+$fly-symbol-48-y: 148px;
+$fly-symbol-48-offset-x: 0px;
+$fly-symbol-48-offset-y: -148px;
+$fly-symbol-48-width: 43px;
+$fly-symbol-48-height: 48px;
+$fly-symbol-48-total-width: 103px;
+$fly-symbol-48-total-height: 276px;
+$fly-symbol-48-image: '../img/spritesheet.png';
+$fly-symbol-48: 0px 148px 0px -148px 43px 48px 103px 276px '../img/spritesheet.png';
+$fly-symbol-80-x: 0px;
+$fly-symbol-80-y: 196px;
+$fly-symbol-80-offset-x: 0px;
+$fly-symbol-80-offset-y: -196px;
+$fly-symbol-80-width: 72px;
+$fly-symbol-80-height: 80px;
+$fly-symbol-80-total-width: 103px;
+$fly-symbol-80-total-height: 276px;
+$fly-symbol-80-image: '../img/spritesheet.png';
+$fly-symbol-80: 0px 196px 0px -196px 72px 80px 103px 276px '../img/spritesheet.png';
+$instagram_icon_36-x: 0px;
+$instagram_icon_36-y: 36px;
+$instagram_icon_36-offset-x: 0px;
+$instagram_icon_36-offset-y: -36px;
+$instagram_icon_36-width: 36px;
+$instagram_icon_36-height: 36px;
+$instagram_icon_36-total-width: 103px;
+$instagram_icon_36-total-height: 276px;
+$instagram_icon_36-image: '../img/spritesheet.png';
+$instagram_icon_36: 0px 36px 0px -36px 36px 36px 103px 276px '../img/spritesheet.png';
+$twitter_icon_36-x: 0px;
+$twitter_icon_36-y: 72px;
+$twitter_icon_36-offset-x: 0px;
+$twitter_icon_36-offset-y: -72px;
+$twitter_icon_36-width: 36px;
+$twitter_icon_36-height: 36px;
+$twitter_icon_36-total-width: 103px;
+$twitter_icon_36-total-height: 276px;
+$twitter_icon_36-image: '../img/spritesheet.png';
+$twitter_icon_36: 0px 72px 0px -72px 36px 36px 103px 276px '../img/spritesheet.png';
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}

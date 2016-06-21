@@ -1,0 +1,910 @@
+/*----- Athlete Marketing Page -----*/
+
+/*--- athlete backgrounds ---*/
+
+.simon_dumont{
+    #QandA{
+        background-image:url(../img/athletes/simon_dumont_backdrop.jpg) !important;
+    }
+    .athlete_m_career{
+        background-image:url(../img/athletes/simon_dumont_backdrop.jpg) !important;
+    }
+}
+
+.carissa_moore{
+    #QandA{
+        background-image:url(../img/athletes/carissa_moore_backdrop.jpg) !important;
+        background-color:#78BD40 !important;
+    }
+    .athlete_m_career{
+        background-image:url(../img/athletes/carissa_moore_backdrop.jpg) !important;
+        background-position:50% 40%;
+    }
+}
+.cannondale_360fly{
+    #QandA{
+        background-image:url(../img/athletes/Athlete_Cannondale_backdrop.jpg) !important;
+        background-color:#78BD40 !important;
+    background-position: 100% 0% !important;
+      }
+    .athlete_m_career{
+        background-image:url(../img/athletes/Athlete_Cannondale_backdrop.jpg) !important;
+        // background-position:50% 40%;
+    }
+}
+
+.pro_circuit_athlete{
+    #QandA{
+        background-image:url(../img/athletes/pro_circuit_backdrop.jpg) !important;
+        background-color:#78BD40 !important;
+        background-position: 0% 20% !important;;
+        background-size: cover !important;
+      }
+    .athlete_m_career{
+        background-image:url(../img/athletes/pro_circuit_backdrop.jpg) !important;
+        background-color:#78BD40 !important;
+    }
+}
+.sh_rally{
+    #QandA{
+        background-image:url(../img/athletes/sh_rally_backdrop.jpg) !important;
+        background-color:#78BD40 !important;
+        background-position: 100% 0% !important;
+      }
+    .athlete_m_career{
+        background-image:url(../img/athletes/sh_rally_backdrop.jpg) !important;
+        background-color:#78BD40 !important;
+        background-position: 0% 50% !important;
+
+    }
+}
+.terry_adams{
+
+    #QandA{
+        background-image:url(../img/athletes/terry_adams_backdrop.jpg) !important;
+        background-color: #74B83F;
+
+    }
+    .athlete_m_career{
+        background-image:url(../img/athletes/terry_adams_backdrop.jpg);
+        background-size:cover;
+        background-repeat:no-repeat;
+    }
+
+}
+
+.chad-reed{
+    #QandA{
+        background-image:url(../img/athletes/chad_reed_backdrop.jpg) !important;
+        background-color: #74B83F;
+        background-position: 100% 0% !important;
+
+    }
+    .athlete_m_career{
+        background-image:url(../img/athletes/chad_reed_backdrop.jpg) !important;
+        background-size:cover;
+        background-repeat:no-repeat;
+    }
+
+}
+.todd_wells{
+    #QandA{
+        // background-color:#333 !important;
+        background-image:url(../img/athletes/todd_wells_backdrop.jpg) !important;
+        background-color: #74B83F;
+        background-position: -50% !important;
+        background-repeat: no-repeat;
+        background-size:cover !important;
+        @media screen and (max-width: 1200px){
+            background-position: -25% !important;
+        }
+        @media screen and (max-width: 1100px){
+            background-position: 0% !important;
+        }
+        @media screen and (max-width: 650px){
+            background-position: 25% !important;
+        }
+    }
+    .athlete_career{
+    background-color: transparent;
+
+    }
+    .athlete_m_career{
+        background-image:url(../img/athletes/todd_wells_backdrop.jpg) !important;
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-position: center !important;
+
+    }
+
+
+}
+.gnassi_racing{
+    .steve-arpin{
+
+            background-image:url(../img/athletes/gnassi_racing_alpin_backdrop.jpg) !important;
+            background-color: #74B83F;
+            background-position: 100% 100% !important;
+            background-repeat: no-repeat;
+            background-size: cover !important;
+
+    }
+    .steve-arpin-m{
+        background-image:url(../img/athletes/gnassi_racing_alpin_backdrop.jpg) !important;
+        background-size:cover;
+        background-repeat:no-repeat;
+    }
+
+    .jeff-ward#QandA{
+
+            background-color:#333 !important;
+
+    }
+    .jeff-ward .athlete_career{
+
+            background-image:url(../img/athletes/gnassi_racing_jeff_backdrop.jpg) !important;
+            background-color: #74B83F;
+            background-position: 100% 100% !important;
+            background-repeat: no-repeat;
+            background-size: cover !important;
+
+    }
+    .jeff-ward-m{
+        background-image:url(../img/athletes/gnassi_racing_jeff_backdrop.jpg) !important;
+        background-size:cover;
+        background-repeat:no-repeat;
+    }
+}
+
+.kanali-david{
+    #QandA{
+        background-image:url(../img/athletes/kalani_backdrop.jpg) !important;
+        background-color: #74B83F;
+        background-repeat: no-repeat;
+        background-size: contain !important;
+    }
+    .athlete_m_career{
+        background-image:url(../img/athletes/kalani_backdrop.jpg) !important;
+        background-color: #74B83F;
+        background-repeat: no-repeat;
+        background-size: cover !important;
+    }
+    .athlete_m_bio{
+        padding-bottom: 0px !important;
+    }
+
+}
+.matt_cordova{
+    #QandA{
+        background-image:url(../img/athletes/matt_backdrop.jpg) !important;
+        background-color: #74B83F;
+        background-repeat: no-repeat;
+        background-size: 64% !important;
+        background-position: 100% 10% !important;
+    }
+    .athlete_m_career{
+        background-image:url(../img/athletes/matt_backdrop.jpg) !important;
+        background-color: #74B83F;
+        background-repeat: no-repeat;
+        background-size: cover !important;
+    }
+    .athlete_m_bio{
+        padding-bottom: 0px !important;
+    }
+
+}
+.jorge_lorenzo, .jamie_whincup, .chaz_mostert{
+    #QandA{
+        background-image:none !important;
+        background-color: #74B83F;
+        background-position: 100% 100% !important;
+        background-repeat: no-repeat;
+        background-size:cover;
+
+    }
+    .athlete_m_career{
+        background-image:none !important;
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-color: #74B83F;
+
+    }
+}
+.athlete_marketing{
+    .active-athlete{
+        color:$grey !important;
+    }
+    .base-content{
+        overflow:hidden;
+    }
+    .text-contain{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+        max-width: 62.5rem;
+        // padding-left:15rem;
+    }
+    .stats-box{
+
+        margin-bottom:30px;
+        span{
+            display:block;
+        }
+
+    }
+    .stats{
+        color:$apple;
+        text-align:right;
+        width:70px;
+        margin-right:5px;
+    }
+}
+#athleteNav{
+  background-color: $night;
+  height: 60px;
+  display: table;
+  position: absolute;
+  margin-top: 0px;
+  padding-left: 6em;
+  nav{
+    display:table-cell;
+    vertical-align: middle;
+
+    ul{
+      margin-bottom: 0px;
+    }
+    li{
+      list-style: none;
+      .featuredMember{
+        background-image: url(../img/placeHolder-nav-arrow.svg);
+        padding-right: 30px;
+        background-repeat: no-repeat;
+        background-position: right;
+      }
+    }
+  }
+}
+.au_athlete{
+    .athlete_m_bio{
+        padding-bottom: 0px !important;
+    }
+}
+#athleteMarketing{
+  // margin-top: 60px;
+  position: relative;
+
+  h3{
+    font-size:26px;
+  }
+  // .row{
+  //   max-width: 100%;
+  // }
+  img{
+    width: 100%;
+  }
+
+  .featuredVid{
+    position: relative;
+  }
+  .featurePlay{
+    z-index: 1000;
+    position: absolute;
+    top:0;
+    margin-top: 80px;
+    max-width:52px;
+    margin-left: 6.5em;
+  }
+  .featuredText{
+
+    z-index: 1000;
+    position: absolute;
+    /* bottom: 0;
+    margin-bottom: -40px;*/
+    margin-top: -160px;
+    margin-left: 6.5em;
+  }
+
+  #featuredProfile{
+    position: absolute;
+    background-color: #000;
+
+    .featuredCover{
+      position: relative;
+
+    }
+    .extremeHeadline{
+      font-size: 60px;
+      margin:0px;
+
+    }
+    h2.extremeHeadline{color:$white; margin-top:-10px; font-size:40px; padding-bottom:10px;}
+    .coverText{
+      z-index: 1000;
+      position: absolute;
+      bottom: 0;
+    //   margin-bottom: 132px;
+      color:$white;
+      padding-bottom:30px;
+    }
+  }
+
+  #featuredProfile{
+    position: relative;
+
+  }
+  #featuredMounts{
+    position: relative;
+    color:$white !important;
+    h2{color:$white;}
+    .text-contain{
+        // top:0;
+        bottom:0;
+        margin-bottom:60px;
+        position:absolute;
+        // margin-top:60px;
+
+    }
+  }
+  .mountsImg{
+    position: relative;
+
+
+  }
+  .mountTxt{
+    position: relative;
+    z-index: 1000;
+    /* bottom: 0;
+    top: 0;*/
+    margin:0px auto;
+    text-align: left;
+
+
+
+  }
+
+  #featuredCloseUp{
+    position: relative;
+    #closeUpImg{
+      position: relative;
+    }
+
+    #activityBundle{
+      position: absolute;
+      z-index: 1000;
+      bottom: 0;
+      background-color: rgba(0,0,0,.4);
+      padding: 1em 6.5em ;
+
+      h2{
+        font-size: 26px;
+      }
+      h3{
+        font-size: 18px;
+      }
+    }
+    .button{
+      margin-top: .5em;
+      font-size: 14px;
+    }
+
+  }
+
+  #QandA{
+      overflow:hidden;
+      display:table-cell;
+    //   background-image:url(../img/athletes/terry_adams_backdrop.jpg);
+      background-size: 50%;
+      background-position: 100% 100%;
+      background-repeat: no-repeat;
+      background-color: #74B83F;
+      p{font-size:16px;}
+      .question{
+          color:$apple !important;
+          margin-bottom:0px;
+          padding:0px;
+      }
+      .answer{
+          padding:0px;
+      }
+      .athlete_bio{
+          padding-top:50px;
+          background-color:#333;
+          color:$white;
+          padding-bottom:45px;
+          h3{
+              color:$white;
+              font-size:34px;
+          }
+          h3:nth-of-type(2){
+              margin-top:35px;
+          }
+          .large-9{
+              max-width:500px;
+          }
+
+      }
+      .athlete_career{
+          padding-top:50px;
+          color:$white;
+          padding:0px;
+          position:relative;
+      }
+      .athlete_highlight_text{
+
+          position:relative;
+          margin-top:50px;
+          padding-left: 1.5rem;
+          padding-right: 1.5rem;
+          h4{
+              color:#000;
+              font-size:20px;
+          }
+      }
+      .career_bg{
+          position:absolute;
+
+      }
+      .space-left{
+          padding-left:0px;
+      }
+      .date-highlight{
+          color:#000;
+          margin-bottom:0px;
+      }
+      .indent{
+          margin-left:15px;
+          margin-bottom:5px;
+      }
+  }
+//end q&a
+    // q&a mobile
+        .athlete_m_bio{
+            background-color:#333;
+            color:$white;
+            padding-top:20px;
+            padding-bottom:20px;
+            h3{
+                color:$white;
+                font-size:34px;
+            }
+            .question{
+                color:$apple !important;
+                margin-bottom:0px;
+                padding:0px;
+            }
+            .answer{
+                padding:0px;
+            }
+            .question:before{
+                clear:both;
+                float:none;
+            }
+            p{color:$white; padding:0px;}
+        }
+        .athlete_m_career{
+            background-image:url(../img/athletes/terry_adams_backdrop.jpg);
+            background-size:cover;
+            background-repeat:no-repeat;
+            padding-top:20px;
+            padding-bottom:20px;
+            p{
+                color:$white;
+            }
+            h4{
+                color:#000;
+                font-size:20px;
+            }
+            .space-left{
+                padding-left:0px;
+            }
+            .date-highlight{
+                color:#000;
+                margin-bottom:0px;
+            }
+            .indent{
+                margin-left:15px;
+                margin-bottom:5px;
+            }
+
+        }
+
+    // q&a mobile end
+
+    #socialBar{
+        // background-color:#000; Changing color for flytour release
+        background-color:#222;
+        .row{
+            max-width:62.5rem;
+        }
+        h3{
+            color:$white;
+        }
+    }
+  #dayToDay{
+    padding:2.5em 6.5em;
+    .slick-slide{
+      /*            max-width: 250px;*/
+      margin: 10px;
+      /*width: 250px !important;*/
+    }
+    .slick-prev:before, .slick-next:before{
+      content:"";
+
+    }
+    .slick-prev{
+      width: 21px;
+      height: 80px;
+      background-image:url(../img/placeHolder-blk-arrow-left.svg) ;
+      background-repeat: no-repeat;
+      left:-40px;
+
+    }
+    .slick-next{
+      width: 21px;
+      height: 80px;
+      background-image:url(../img/placeHolder-blk-arrow-right.svg) ;
+      background-repeat: no-repeat;
+      right:-40px;
+
+    }
+    .slick-next, .slick-prev{
+      margin-top:-30px;
+    }
+
+
+  }
+
+  #otherVideos{
+    position: relative;
+    overflow: hidden;
+    h3{
+      padding-left: 4.15em;
+      margin-bottom:35px;
+    }
+    .otherVideoList{
+      position: relative;
+      .otherVideoImg{
+        position: relative;
+      }
+      li{
+        padding: .02rem .01rem;
+        position: relative;
+      }
+      .otherVideoPlay{
+        position: absolute;
+        top: 0;
+        z-index: 1000;
+        margin-left: 6.5em;
+        margin-top: 20px;
+        img{
+          width: 52px;
+        }
+
+      }
+      .otherVideoText{
+
+        position: absolute;
+        bottom: 0;
+        z-index:1000;
+        margin-left: 6.5em;
+        margin-bottom:20px;
+        h3{
+          padding: 0;
+        }
+      }
+    }
+  }
+#video{
+    background-color:#191919;
+    max-width:none;
+    padding-top:100px;
+    padding-bottom:100px;
+
+    h4{
+        color:$white;
+        margin-bottom:40px;
+    }
+    .vid-padding{
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+}
+
+/*-- RESPONSIVE ADJUSTMENTS --*/
+// @media only screen and (max-width:1073px){
+//     #athleteMarketing{
+//         #featuredProfile{
+//             .coverText{
+//                 margin-bottom:62px;
+//             }
+//         }
+//     }
+//
+//
+// }
+@media only screen  and (max-width: 1025px){
+    #athleteMarketing{
+        #featuredProfile{
+            .coverText{
+                margin-bottom:0px;
+            }
+        }
+        .text-contain{
+            padding-left:1.5rem;
+            padding-right:1.5rem;
+            margin-bottom:0px !important;
+        }
+        .extremeHeadline{
+            font-size:2.75rem !important;
+            margin-bottom:15px !important;
+        }
+        #featuredMounts {
+                h2{
+                    font-size:2.3125rem;
+                }
+
+        }
+
+    }// end athleteMarketing
+
+}
+
+@media only screen and (max-width:900px){
+    .simon_dumont, .carissa_moore, .terry_adams, .jorge_lorenzo{
+        #featuredProfile{
+            background-color:#000;
+            .show-for-medium-up{
+                display:none !important;
+            }
+            .show-for-small-only{
+                display:block !important;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:734px){
+    #athleteMarketing{
+        #featuredProfile{
+            .coverText{
+                .medium-7{
+                    width:63.3333%;
+                }
+            }
+
+        }
+
+    }
+
+
+}
+
+@media only screen and (max-width:729px){
+    .simon_dumont, .carissa_moore, .jorge_lorenzo{
+        #featuredProfile{
+            .show-for-medium-up{
+                display:none !important;
+            }
+            .show-for-small-only{
+                display:block !important;
+            }
+        }
+    }
+
+
+}
+
+@media only screen and (max-width:681px){
+    #athleteMarketing{
+        #featuredProfile{
+            .coverText{
+                .medium-7{
+                    width:70.3333%;
+                }
+            }
+
+        }
+
+    }
+
+
+}
+
+@media only screen and (max-width:367px) and (min-width:0px){
+
+    #athleteMarketing{
+        #featuredProfile{
+            padding-bottom:140px !important;
+            background-color: #000;
+        }
+        .extremeHeadline{
+            font-size: 2.25rem !important;
+        }
+    }
+}
+
+@media only screen and (max-width:610px){
+    .simon_dumont{
+        #featuredProfile{
+            .coverText{
+                .medium-7{
+                    width:100% !important;
+                }
+            }
+        }
+    }
+
+}
+
+
+@media only screen and (max-width:610px){
+    .simon_dumont{
+        #featuredProfile{
+            h2.extremeHeadline{
+                    line-height:40px;
+
+            }
+        }
+    }
+
+}
+@media only screen and (max-width:478px)  {
+    .jorge_lorenzo{
+        #athleteMarketing{
+            #featuredProfile{
+                padding-bottom: 330px !important;
+            }
+        }
+    }
+
+}
+@media only screen and (max-width:430px){
+    #athleteMarketing{
+        #featuredProfile{
+            h2.extremeHeadline{
+                line-height:40px;
+            }
+            .coverText{
+                .medium-7{
+                    width:100%;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width:364px){
+    #athleteMarketing{
+        #featuredProfile{
+            h2.extremeHeadline{
+                line-height:40px;
+            }
+            .coverText{
+                .medium-7{
+                    width:100%;
+                }
+            }
+        }
+    }
+
+}
+
+
+@media only screen and (min-width:360px) and (max-width:641px){
+    #athleteMarketing{
+
+        #featuredMounts{
+            background-color:#000;
+            .text-contain{
+                bottom:0;
+                margin-top:0px;
+                top:inherit;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:401px) and (max-width:480px){
+    #athleteMarketing{
+        // #featuredProfile{
+        //
+        //     padding-bottom:50px;
+        //     background-color:#000;
+        // }
+
+        #featuredMounts{
+            padding-bottom:50px;
+            background-color:#000;
+        }
+    }
+}
+
+
+
+
+@media only screen and (max-width:435px) and (min-width:367px){
+    #athleteMarketing{
+        #featuredProfile{
+
+            padding-bottom:70px;
+            background-color:#000;
+        }
+
+        #featuredMounts{
+            padding-bottom:125px;
+            background-color:#000;
+        }
+    }
+    .simon_dumont{
+            #featuredProfile{
+                padding-bottom:100px !important;
+            }
+
+
+    }
+
+}
+
+@media only screen and (max-width:346px) and (min-width:0px){
+    #athleteMarketing{
+        #featuredProfile{
+            .extremeHeadline{
+                line-height:40px;
+            }
+            h1.extremeHeadline{
+                margin-top:20px;
+            }
+
+        }
+    }
+
+    .simon_dumont{
+            #featuredProfile{
+                padding-bottom:100px;
+            }
+
+
+    }
+
+
+}
+
+@media only screen and (max-width:330px) and (min-width:0px){
+    #athleteMarketing{
+        #featuredProfile{
+
+            padding-bottom:100px;
+            background-color:#000;
+        }
+
+    }
+
+
+}
+
+@media only screen and (max-width:339px) and (min-width:0px){
+
+    #athleteMarketing{
+        #featuredProfile{
+
+            padding-bottom:100px;
+            background-color:#000;
+        }
+
+        #featuredMounts{
+            padding-bottom:200px;
+            background-color:#000;
+            .text-contain{
+                bottom:0;
+                margin-top:0px;
+                top:inherit;
+            }
+        }
+    }
+
+}

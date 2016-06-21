@@ -1,0 +1,219 @@
+.desktop-page, .apps-page{
+    background-color:black;
+    #desktop-header{
+        background-image:url(../img/desktop-apps/desktop-app-header.jpg);
+        background-size:cover;
+        padding-top:120px;
+        padding-bottom: 100px;
+        border-top:$primary-color 5px solid;
+        h1{
+            text-shadow: none;
+            font-size: 65px;
+            text-transform: uppercase;
+            line-height: 65px;
+            font-family: "FlySans-Medium", Arial, sans-serif;
+        }
+        p{
+            color:white;
+        }
+    }
+    #apps-header{
+        background-image:url(../img/desktop-apps/apps-page-header.jpg);
+        background-size:cover;
+        padding-top:120px;
+        padding-bottom: 200px;
+        border-top:$primary-color 5px solid;
+        h1{
+            text-shadow: none;
+            font-size: 65px;
+            text-transform: uppercase;
+            line-height: 65px;
+            font-family: "FlySans-Medium", Arial, sans-serif;
+        }
+        p{
+            color:white;
+        }
+    }
+    #miss-share{
+        text-align: center;
+        color:white;
+        background-color: $primary-color;
+        padding-top:60px;
+        padding-bottom:60px;
+
+        h2{
+            color:white;
+            text-shadow: none;
+            font-family: "FlySans-Medium", Arial, sans-serif;
+            line-height: .95;
+        }
+    }
+    #mobile-desktop-apps{
+        background-color:white;
+        display: inline-block;
+        border-bottom:50px solid $primary-color;
+        margin-bottom: -10px;
+        ul{
+            margin:0px;
+            li{
+                padding: 0px;
+                overflow: hidden;
+                display: table;
+                .apps-img{
+                    width: 100%;
+                }
+                .row{
+                    margin-top:10%;
+                    .apps-button{
+                        padding-left:.5rem;
+                        padding-right:.5rem;
+                    }
+                    h2{
+                        color:black;
+                        line-height: .85;
+
+                    }
+                }
+            }
+        }
+
+        .mobile-app-preview{
+            display: flex;
+            overflow: hidden;
+            img{
+                    object-fit: cover;
+                    height:100%;
+            }
+
+        }
+        .hide-large{
+            display: none;
+        }
+        .show-med{
+            display: none;
+            visibility: hidden;
+        }
+        .apps-button{
+            padding-left:.5rem;
+            padding-right:.5rem;
+        }
+        h2{
+            color:black;
+            line-height: .85;
+        }
+        .app-content-holder{
+            top: 0;
+        }
+        .app-content{
+            margin:0px auto;
+            padding-top:60px;
+            ul{
+                li{
+                    padding: 0 0.625rem 1.25rem;
+                    .button{
+                        padding-left:1rem;
+                        padding-right:1rem;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .app-wrapper{
+            display: table;
+            clear: both;
+            float: none;
+
+        }
+    }
+    #easy-control{
+        background-image:url(../img/desktop-apps/easy-control.jpg);
+        padding-top:60px;
+        padding-bottom:60px;
+        background-size: cover;
+        h2{
+            color:white;
+            text-shadow: none;
+            font-family: "FlySans-Medium", Arial, sans-serif;
+            line-height: .85;
+        }
+        p{
+            color: white;
+        }
+
+    }
+    #youtube-section{
+        background-color:white;
+        padding-top:60px;
+        padding-bottom:60px;
+        color:black;
+        border-bottom: 45px solid $primary-color;
+        h2{
+            color:black;
+            line-height: .85;
+        }
+    }
+    #compatible-section{
+        background-color:#333333;
+        padding-top:60px;
+        padding-bottom:60px;
+        color:#cccccc;
+        h2{
+            color:#cccccc;
+            font-size:36px;
+            line-height: .95;
+        }
+        p{
+            font-size: 17px;
+            line-height: 1.25;
+        }
+        ul{
+            padding-left:50px;
+            line-height: 1.25;
+            font-size: 17px;
+
+        }
+    }
+}
+@media screen and (max-width:1025px){
+    .desktop-page, .apps-page{
+        .row{
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+        .app-content{
+            background-color: white;
+            p{color:black;}
+        }
+        .show-med{
+            display: flex !important;
+            visibility:visible !important;
+        }
+        .show-large{
+            display: none !important;
+        }
+        .mobile-app-preview{
+
+            img{
+                width:100%;
+                    object-fit: cover;
+                    object-position: 50% 50%;
+            }
+
+        }
+    }
+}
+@media screen and (min-width:1530px){
+        .apps-page{
+            .mobile-app-preview{
+
+                img{
+                    max-width: none;
+                    width: 100%;
+                }
+
+            }
+
+        }
+
+
+}

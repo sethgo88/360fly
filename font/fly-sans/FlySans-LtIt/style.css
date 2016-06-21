@@ -1,0 +1,16 @@
+
+/* Copyright (c) 2015 by Eduardo Manso. All rights reserved.
+ * This software is the property of Emtype Foundry and may not be reproduced, used, displayed, modified, disclosed or transferred.
+ * For use these Webfonts you may obtain a valid license at http://www.emtype.net */
+
+@font-face {
+font-family: 'FlySans-LightItalic';
+      src: url('wf/FlySans-LtIt.eot'); /* IE9 Compat Modes */
+      src: url('wf/FlySans-LtIt.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+           url('wf/FlySans-LtIt.woff') format('woff'), /* Modern Browsers */
+           url('wf/FlySans-LtIt.ttf') format('truetype'), /* Safari, Android, iOS */
+           url('wf/FlySans-LtIt.svg#Fly Sans Light Italic') format('svg'); /* Legacy iOS */
+      font-style: normal;
+      font-weight: normal;
+      text-rendering: optimizeLegibility;
+}

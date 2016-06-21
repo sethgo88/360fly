@@ -1,0 +1,38 @@
+.vjs-default-skin.vjs-has-started.vjs-user-inactive.vjs-playing .vjs-control-bar{
+visibility: visible !important;
+opacity: 1 !important;
+transition-duration: 0s!important;
+}
+.vjs-control-bar {
+    color: $white;
+}
+.vjs-control.vjs-view-switch-control{
+width:5em;
+cursor:pointer;
+}
+.vjs-control.vjs-view-switch-control:before{
+font-family: FontAwesome;
+content:"\f07e";
+}
+.vjs-control.vjs-zoom-control{
+width:5em;
+cursor:pointer;
+}
+.vjs-control.vjs-zoom-in-control:before{
+font-family: FontAwesome;
+content:"\f00e";
+}
+.vjs-control.vjs-zoom-out-control:before{
+font-family: FontAwesome;
+content:"\f010";
+}
+.vjs-control.vjs-link-control{
+width:5em;
+cursor:pointer;
+}
+.vjs-control.vjs-link-control:before{
+ font-family: FontAwesome;
+ content:"\f08e";
+}
+
+/* --------------------------------------------------- */

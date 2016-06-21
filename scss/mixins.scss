@@ -1,0 +1,89 @@
+/*
+ * mixins
+ */
+
+// Button Mixins
+
+@mixin button($color)
+{
+        font-family: "FlySans-Medium",Helvetica,Arial,sans-serif;
+        line-height: normal;
+        // margin: 0 0 1.25rem;
+        position: relative;
+        color:#fff;
+        text-decoration: none;
+        text-align: center;
+        border:2px solid $color !important;
+        background-color: $color;
+        padding-top: 1.0625rem;
+        padding-bottom: 1rem;
+        -webkit-border-radius: 1000px;
+        -moz-border-radius: 1000px;
+        border-radius: 1000px;
+        -webkit-transition: all 300ms ease-out;
+        -moz-transition: all 300ms ease-out;
+        transition: all 300ms ease-out;
+        font-weight: normal;
+
+        &:hover, &:active, &:focus{
+            background-color: $hover-primary;
+            color:#fff;
+            border:2px solid $hover-primary !important;
+
+        }
+}
+
+@mixin button-outline($color)
+{
+    font-family: "FlySans-Medium",Helvetica,Arial,sans-serif;
+    line-height: normal;
+    // margin: 0 0 1.25rem;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    border:none !important;
+    background-color: transparent;
+    color:$color;
+    border: 2px solid $color !important;
+    padding-top: 1.0625rem;
+    padding-bottom: 1rem;
+    -webkit-border-radius: 1000px;
+    -moz-border-radius: 1000px;
+    border-radius: 1000px;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    font-weight: normal;
+
+    &:hover, &:active, &:focus{
+        background-color: $color;
+        color:#fff;
+    }
+
+}
+@mixin btn-half-right($color)
+{
+    border-top-right-radius: 1000px;
+    border-bottom-right-radius: 1000px;
+    -moz-border-top-right-radius: 1000px;
+    -moz-border-bottom-right-radius: 1000px;
+    -webkit-border-top-right-radius: 1000px;
+    -webkit-border-bottom-right-radius: 1000px;
+    -o-border-top-right-radius: 1000px;
+    -o-border-bottom-right-radius: 1000px;
+    background-color: $color;
+    color:#fff;
+    border:1px solid $primary-color !important;
+
+    &:hover, &:active, &:focus{
+        background-color: $hover-primary;
+        color:#fff;
+        border:1px solid $hover-primary !important;
+
+    }
+}
+@mixin clear()
+{
+    clear:both;
+    float:none;
+}

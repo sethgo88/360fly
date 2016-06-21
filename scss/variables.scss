@@ -1,0 +1,194 @@
+/*
+ * set or override variables
+ */
+
+ //changing page width based off of design
+ $oscarpagewidth: 980px;
+
+// Editing variables.less Medium Breakpoint
+$screen-md:                  1026px;
+
+$body-font-family: "FlySans-", Arial, sans-serif;
+// $body-font-weight: $font-weight-normal;
+$body-font-style: normal;
+
+// 360fly Colors
+// We use these as default colors throughout
+$primary-color: #78be20;        // Apple
+$secondary-color: #008c95;      // Turquoise
+$alert-color: #e0004c;          // Ruby
+$success-color: #05c3de;        // Azure
+$warning-color: #ff671f;        // Orange
+$info-color: #830065;           // Peony
+$hover-primary: #60981a;
+$white: #fff;
+$grey: #808285;
+$midnight: #1a1a1a;
+$black: #000000;
+$lightgrey: #444444;
+$mat_red: #F44336;
+$dusty_gray: #969696;
+$silver: #ccc;
+$silver_chalice: #B1B1B1;
+$dove_gray: #666666;
+$mine_shaft: #333333;
+
+// FONTS
+$fontPath : "//d3a8ot8p8m13p6.cloudfront.net/fonts";
+
+
+@font-face {
+font-family: 'FlySans-Bold';
+      src: url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-Bd.eot'); /* IE9 Compat Modes */
+      src: url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-Bd.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+           url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-Bd.woff') format('woff'), /* Modern Browsers */
+           url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-Bd.ttf') format('truetype'), /* Safari, Android, iOS */
+           url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-Bd.svg#Fly Sans Bold') format('svg'); /* Legacy iOS */
+      font-style: normal;
+      font-weight: normal;
+      text-rendering: optimizeLegibility;
+}
+
+@font-face {
+font-family: 'FlySans-UltraLightItalic';
+      src: url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-UltLtIt.eot'); /* IE9 Compat Modes */
+      src: url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-UltLtIt.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+           url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-UltLtIt.woff') format('woff'), /* Modern Browsers */
+           url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-UltLtIt.ttf') format('truetype'), /* Safari, Android, iOS */
+           url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-UltLtIt.svg#Fly Sans UltraLight Italic') format('svg'); /* Legacy iOS */
+      font-style: normal;
+      font-weight: normal;
+      text-rendering: optimizeLegibility;
+}
+@font-face {
+font-family: 'FlySans-UltraLight';
+      src: url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-UltLt.eot'); /* IE9 Compat Modes */
+      src: url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-UltLt.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+           url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-UltLt.woff') format('woff'), /* Modern Browsers */
+           url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-UltLt.ttf') format('truetype'), /* Safari, Android, iOS */
+           url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-UltLt.svg#Fly Sans UltraLight') format('svg'); /* Legacy iOS */
+      font-style: normal;
+      font-weight: normal;
+      text-rendering: optimizeLegibility;
+}
+@font-face {
+font-family: 'FlySans-ThinItalic';
+      src: url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-ThIt.eot'); /* IE9 Compat Modes */
+      src: url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-ThIt.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+           url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-ThIt.woff') format('woff'), /* Modern Browsers */
+           url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-ThIt.ttf') format('truetype'), /* Safari, Android, iOS */
+           url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-ThIt.svg#Fly Sans Thin Italic') format('svg'); /* Legacy iOS */
+      font-style: normal;
+      font-weight: normal;
+      text-rendering: optimizeLegibility;
+}
+@font-face {
+font-family: 'FlySans-Thin';
+      src: url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-Th.eot'); /* IE9 Compat Modes */
+      src: url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-Th.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+           url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-Th.woff') format('woff'), /* Modern Browsers */
+           url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-Th.ttf') format('truetype'), /* Safari, Android, iOS */
+           url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-Th.svg#Fly Sans Thin') format('svg'); /* Legacy iOS */
+      font-style: normal;
+      font-weight: normal;
+      text-rendering: optimizeLegibility;
+}
+@font-face {
+font-family: 'FlySans-SemiBoldItalic';
+      src: url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-SmBdIt.eot'); /* IE9 Compat Modes */
+      src: url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-SmBdIt.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+           url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-SmBdIt.woff') format('woff'), /* Modern Browsers */
+           url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-SmBdIt.ttf') format('truetype'), /* Safari, Android, iOS */
+           url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-SmBdIt.svg#Fly Sans SemiBold Italic') format('svg'); /* Legacy iOS */
+      font-style: normal;
+      font-weight: normal;
+      text-rendering: optimizeLegibility;
+}
+@font-face {
+font-family: 'FlySans-SemiBold';
+      src: url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-SmBd.eot'); /* IE9 Compat Modes */
+      src: url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-SmBd.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+           url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-SmBd.woff') format('woff'), /* Modern Browsers */
+           url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-SmBd.ttf') format('truetype'), /* Safari, Android, iOS */
+           url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-SmBd.svg#Fly Sans SemiBold') format('svg'); /* Legacy iOS */
+      font-style: normal;
+      font-weight: normal;
+      text-rendering: optimizeLegibility;
+}
+@font-face {
+font-family: 'FlySans-RegularItalic';
+      src: url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-RgIt.eot'); /* IE9 Compat Modes */
+      src: url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-RgIt.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+           url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-RgIt.woff') format('woff'), /* Modern Browsers */
+           url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-RgIt.ttf') format('truetype'), /* Safari, Android, iOS */
+           url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-RgIt.svg#Fly Sans Regular Italic') format('svg'); /* Legacy iOS */
+      font-style: normal;
+      font-weight: normal;
+      text-rendering: optimizeLegibility;
+}
+@font-face {
+font-family: 'FlySans-';
+      src: url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-Rg.eot'); /* IE9 Compat Modes */
+      src: url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-Rg.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+           url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-Rg.woff') format('woff'), /* Modern Browsers */
+           url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-Rg.ttf') format('truetype'), /* Safari, Android, iOS */
+           url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-Rg.svg#Fly Sans') format('svg'); /* Legacy iOS */
+      font-style: normal;
+      font-weight: normal;
+      text-rendering: optimizeLegibility;
+}
+@font-face {
+font-family: 'FlySans-MediumItalic';
+      src: url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-MdIt.eot'); /* IE9 Compat Modes */
+      src: url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-MdIt.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+           url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-MdIt.woff') format('woff'), /* Modern Browsers */
+           url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-MdIt.ttf') format('truetype'), /* Safari, Android, iOS */
+           url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-MdIt.svg#Fly Sans Medium Italic') format('svg'); /* Legacy iOS */
+      font-style: normal;
+      font-weight: normal;
+      text-rendering: optimizeLegibility;
+}
+@font-face {
+font-family: 'FlySans-Medium';
+      src: url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-Md.eot'); /* IE9 Compat Modes */
+      src: url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-Md.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+           url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-Md.woff') format('woff'), /* Modern Browsers */
+           url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-Md.ttf') format('truetype'), /* Safari, Android, iOS */
+           url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-Md.svg#Fly Sans Medium') format('svg'); /* Legacy iOS */
+      font-style: normal;
+      font-weight: normal;
+      text-rendering: optimizeLegibility;
+}
+@font-face {
+font-family: 'FlySans-LightItalic';
+      src: url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-LtIt.eot'); /* IE9 Compat Modes */
+      src: url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-LtIt.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+           url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-LtIt.woff') format('woff'), /* Modern Browsers */
+           url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-LtIt.ttf') format('truetype'), /* Safari, Android, iOS */
+           url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-LtIt.svg#Fly Sans Light Italic') format('svg'); /* Legacy iOS */
+      font-style: normal;
+      font-weight: normal;
+      text-rendering: optimizeLegibility;
+}
+@font-face {
+font-family: 'FlySans-Light';
+      src: url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-Lt.eot'); /* IE9 Compat Modes */
+      src: url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-Lt.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+           url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-Lt.woff') format('woff'), /* Modern Browsers */
+           url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-Lt.ttf') format('truetype'), /* Safari, Android, iOS */
+           url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-Lt.svg#Fly Sans Light') format('svg'); /* Legacy iOS */
+      font-style: normal;
+      font-weight: normal;
+      text-rendering: optimizeLegibility;
+}
+@font-face {
+font-family: 'FlySans-BoldItalic';
+      src: url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-BdIt.eot'); /* IE9 Compat Modes */
+      src: url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-BdIt.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+           url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-BdIt.woff') format('woff'), /* Modern Browsers */
+           url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-BdIt.ttf') format('truetype'), /* Safari, Android, iOS */
+           url('//d3a8ot8p8m13p6.cloudfront.net/fonts/FlySans-BdIt.svg#Fly Sans Bold Italic') format('svg'); /* Legacy iOS */
+      font-style: normal;
+      font-weight: normal;
+      text-rendering: optimizeLegibility;
+}

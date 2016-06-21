@@ -1,0 +1,787 @@
+//home header
+.home-cta-header{
+  background-image: url('../img/preorder-background.jpg');
+  background-position: center;
+  background-size:cover;
+  padding-top:150px;
+  // padding-bottom:150px;
+  h2{
+    color:white;
+    font-size:35px;
+    text-transform: uppercase;
+  }
+  h3{
+    color:white;
+    font-size:27px;
+    text-transform: uppercase;
+    margin-bottom:-20px;
+  }
+  .fourk_logo{
+    max-width:325px;
+    width: 100%;
+  }
+  p{
+    margin-top:20px;
+    color:#cccccc;
+    font-size: 20px;
+    font-family: "FlySans-", Arial, sans-serif;
+    line-height: 1.2;
+
+  }
+
+  #shop-now-button{
+    border-color: #60981a;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    margin-top: 20px;
+  }
+
+}
+
+// athlete blocks
+.athlete_intro{
+    background-color:#000;
+    padding:33px 0px;
+    h2{
+    color:$white;
+    }
+}
+.athletes-home{
+    margin:0px;
+
+    li{
+        overflow:hidden;
+        max-height:600px;
+        height:100%;
+        position:relative;
+        padding:0px;
+    }
+    .athlete-imgs{
+        // position: relative;
+        display: block;
+        z-index: 1;
+
+
+    }
+    .small-block-grid-1, .medium-block-grid-1{
+        margin:0px;
+        .athlete-imgs{
+            margin-top:-90px !important;
+            max-width:1100px;
+            width:100%;
+
+        }
+    }
+}
+.bottom-block{
+    position: absolute;
+    background-color: rgba(120, 190, 65, .85);
+    display: none;
+    opacity: 0;
+    z-index: 100;
+    padding:12px 40px;
+    bottom: 0;
+    height:85px;
+    color:$white;
+
+    .athlete_name{
+        font-size:26px;
+        margin-bottom:0px;
+    }
+    .athlete_subhead{
+        font-size:18px;
+        margin-bottom:20px;
+    }
+    .hidden-text{
+        p{
+            font-size:16px;
+            line-height:22px;
+        }
+        .button{
+            background-color:transparent;
+            border:solid 1px $white;
+        }
+        .button:hover{
+            background-color:$white;
+            color:$apple;
+        }
+    }
+}
+.bottom-contain{
+    width:100%;
+    height:100%;
+    z-index:100;
+    position:absolute;
+    top:0;
+
+
+}
+//end athlete blocks
+.ces_home_logo{
+background-size: 99%;
+background-repeat: no-repeat;
+}
+.footer_logo{
+background-size: 99%;
+background-repeat: no-repeat;
+}
+
+.hide_331{
+
+}
+.show_330{
+	display: none;
+}
+.nav_preorder{
+	margin-top:18px;
+	text-transform: none !important;
+background-color: #78be20;
+line-height: 38px;
+height: 100% !important;
+padding-left: 25px;
+padding-right: 25px;
+font-size: 16px !important;
+margin-top: 14px;
+font-family: "FlySans-Medium", Arial, sans-serif;
+width: 180px;
+float: right;
+font-weight: normal !important;
+margin-right: 0px!important;
+top:0px !important;
+}
+#videoHeadlines{
+z-index: 9998;
+ margin: auto;
+  position: absolute;
+  top: 0; left: 0; /*bottom: 0;*/ right: 0;
+text-align: center;
+display: table;
+vertical-align: middle;
+margin:auto;
+.videoHeadlinesHolder{
+	display: table-cell;
+	vertical-align: middle;
+}
+	h1{
+		font-size: 70px;
+		text-align: center;
+		line-height: 1;
+	}
+	h2{
+		font-size: 45px;
+		color:#808285;
+		text-align: center;
+	}
+}
+.videocontent{
+	position: relative;
+	canvas{
+		top: 0 !important;
+	}
+}
+
+@media screen and (min-width: 701px) {
+    #homepage-cta-video iframe {
+        top: -100px;
+    }
+}
+@media screen and (max-width: 700px) {
+    #homepage-cta-video iframe {
+        top: -50px;
+    }
+}
+
+#homepage-cta-video {
+  width: 100%;
+}
+@media (min-width:1200px) {
+  #homepage-cta-video {
+    width: 1200px;
+    padding-bottom:750px;
+  }
+}
+
+#socialBar{
+	background-color: #000;
+	height: 153px;
+	font-size: 26px;
+	input{
+		border-radius: 1000px;
+		margin-left: 15px;
+		font-family: "FlySans-Medium", Arial, sans-serif!important;
+		font-style: italic!important;
+		font-size: 16px!important;
+		-webkit-border-radius: 1000px!important;
+		-moz-border-radius: 1000px!important;
+		border-radius: 1000px!important;
+		padding-right: 2rem!important;
+		padding-left: 1.5rem!important;
+		float: left!important;
+		width: 40%;
+		margin-top: -10px;
+		height: 58px!important;
+        background-color: #1F1F1F;
+        color: #808285 !important;
+
+	}
+    input:active,input:focus{
+        background-color:#fff;
+    }
+	p{
+		color: #fff;
+		padding-top: 5px;
+		font-size: 26px !important;
+		font-family: "FlySans-", Arial, sans-serif !important;
+        margin-left:13px;
+
+	}
+
+	.mailSignUpBtn {
+		background-color: #000000;
+		border: 2px solid #808285;
+		color: #808285;
+		margin-left: 10px;
+		margin-top:-10px;
+		text-transform: none;
+		font-family: "FlySans-Medium", Arial, sans-serif;
+		}
+	.mailSignUpBtn:hover {
+		background-color: #808285;
+		border: 2px solid #808285;
+		color: white;
+		}
+	.follow{
+			margin-left: 0px;
+		}
+	.socialIcons{
+		margin-left: 26px;
+	}
+	.icon-twitter{
+		color:$apple;
+	}
+	.icon-facebook{
+		color:$apple;
+	}
+	.icon-tumblr{
+		color: $apple;
+	}
+	.columns{
+		margin-top: 50px;
+	}
+	.social-links{
+		font-size: 42px;
+		line-height: 1;
+		margin-left: 1px;
+	}
+	.social-links:hover{
+		color:$white;
+	}
+}
+
+
+/*----- SLIDER FOR CES -----*/
+.cesIntro-sml{
+	display: none;
+}
+#cesSlider.introduction{
+  min-height: 850px;
+  height: 100%;
+  clear: both;
+  float: none;
+  padding-top:30px;
+}
+
+#cesSlider {
+	background-color: #000;
+    background-image: url('../img/ces_home/Home_360Fly_Product.jpg');
+    background-size: contain;
+	margin-bottom: 0px;
+	.row{
+		display: block;
+	}
+	.slick-slide{
+		border: none !important;
+		overflow: hidden;
+
+		/*img{
+			height: 100%;
+			max-width: none;
+		}*/
+	/*------ Special margins for slide images -------*/
+		/*.sl1{margin-left: 7rem;}*/
+	}
+
+	.sliderTxt{
+		display: block;
+		position: absolute;
+		margin-top: 60px;
+		z-index: 2000;
+		 h1{
+			color:$white;
+			font-size: 60px;
+			line-height: 1;
+			margin-bottom: 20px;
+		}
+		h3{
+			font-size: 34px;
+			line-height: 1;
+		}
+		p, h2{
+			font-size: 20px;
+			color:#999999;
+			font-family: "FlySans-", Arial, sans-serif;
+			line-height: 1.4 !important;
+			margin-top: 30px;
+			margin-bottom: 50px;
+
+		}
+		.preOrder{
+			font-family: "FlySans-Light", Arial, sans-serif;
+			width: 174px;
+
+		}
+		.clear{
+			clear:both; float:none; display: block;
+		}
+		.reverse{
+			clear: both;
+			float: none;
+			background-color: transparent;
+			border: 2px solid #78be20;
+			color: #78be20;
+			font-family: "FlySans-Light", Arial, sans-serif;
+			width:174px;
+
+		}
+		.reverse:hover{
+background-color: #60981a;
+			border: 2px solid #60981a;
+			color: white;
+		}
+		.button{
+			font-family: "FlySans-Light", Arial, sans-serif;
+		}
+	}
+	.slides-control{
+		/*position: initials !important;*/
+	}
+	.slides-pagination{
+		padding-right: 1.5rem;
+		text-align: right;
+		bottom:45px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 0;
+		margin-bottom: 0;
+		max-width: 59.5rem;
+		position: relative;
+		a{
+			border: solid 1px $apple;
+			width: 15px;
+			height: 15px;
+			text-indent: 100%;
+			box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.63);
+		}
+		.current{
+
+			background-color:$apple;
+		}
+	}
+
+
+
+}
+
+.cesIntro-sml{
+	display: none;
+	.columns{
+			padding-top: 1.75rem;
+			padding-bottom: 1.75rem;
+		background-color: #333;
+	}
+	h1{
+			color:$white;
+			font-size: 40px;
+			margin-bottom: 20px;
+			line-height: 1;
+		}
+		h3{
+			font-size: 28px;
+			line-height: 1;
+		}
+		p,h2{
+			font-size: 16px;
+			color:#999999;
+			font-family: "FlySans-", Arial, sans-serif;
+			margin-top: 30px;
+			margin-bottom: 50px;
+			line-height: 1.4 !important;
+
+		}
+		.reverse{
+			clear: both;
+			float: none;
+			background-color: transparent;
+			border: 1px solid #78be20;
+			color: #78be20;
+
+		}
+		.reverse:hover{
+			background-color: #60981a;
+			color:$white;
+			border-color:#60981a;
+		}
+	.slides-pagination{
+		padding-right: 1.5rem;
+		text-align: right;
+		bottom:45px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 0;
+		margin-bottom: 0;
+		max-width: 29.5rem;
+		position: relative;
+		a{
+			border: solid 1px $apple;
+			width: 15px;
+			height: 15px;
+			text-indent: 100%;
+			box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.63);
+		}
+		.current{
+			background-color:$apple;
+		}
+	}
+
+}
+
+/*-- Apps coming soon --*/
+
+#livitSlider{
+  height: 598px;
+  background-color: #1b1b1b;
+  .slick-slide{
+    &:hover{
+    cursor: pointer !important;
+  }
+}
+
+  @media screen and (max-width:1025px){
+    height: auto;
+
+  }
+  @media screen and (min-width:1026px){
+      height: auto;
+      max-width: 1600px;
+      margin: 0px auto;
+    }
+  .slick-list{
+    height:100%;
+  }
+  .slick-track{
+    height:100%;
+  }
+  .slick-dots{
+    li button{
+      border-color:#78be20;
+    }
+    li.slick-active button{
+      background-color:#78be20;
+    }
+  }
+  .apps{
+    background-image:url('../img/apps_bg.jpg');
+    height:598px;
+    background-size: cover;
+    background-position: 85%;
+    @media screen and (max-width:1024px){
+      background-image: none;
+      height: auto !important;
+      padding:0px;
+    }
+    @media screen and (min-width:1026px){
+      background-size: cover !important;
+    }
+
+    h2{
+        color:$white;
+    }
+    .green{
+        color:$apple;
+    }
+    p{
+        color:$white;
+    }
+    .app-content{
+        margin-top:135px;
+        @media screen and (max-width:1024px){
+          margin-top: 0px;
+          padding-top:0px;
+
+        }
+
+
+    }
+    .slide-content{
+      padding:20px 40px;
+      height: 100%;
+    }
+    .row{
+      @media screen and (max-width:1024px){
+        max-width: 100%;
+      }
+    }
+    .app-icons{
+        a {
+            opacity:0.8;
+            margin-right:10px;
+            width:135px;
+            img{
+                height:40px;
+            }
+        }
+        a:hover{
+            opacity:1;
+        }
+    }
+  }
+
+  .livitWeb{
+    background-image:url('../img/livit_bg.jpg');
+    height:598px;
+    background-size: inherit;
+    background-repeat: no-repeat;
+    @media screen and (max-width:1024px){
+      background-image: none;
+      height: auto;
+      padding: 0px;
+    }
+    @media screen and (min-width:1026px){
+      background-size: cover !important;
+    }
+
+    .row{
+      @media screen and (max-width:1024px){
+        max-width: 100%;
+      }
+    }
+    h2{
+      line-height: 1;
+    }
+    .app-content{
+        margin-top:75px;
+        @media screen and (max-width:1024px){
+          margin-top: 0px;
+          padding-top:0px;
+          margin-bottom: 30px;
+        }
+        @media screen and (min-width:1026px){
+          padding-right:45px;
+        }
+    }
+    .app-icons{
+        a {
+            opacity:0.8;
+            margin-right:10px;
+            width:135px;
+            img{
+                height:40px;
+            }
+        }
+        a:hover{
+            opacity:1;
+        }
+    }
+    .slide-content{
+      padding:20px 40px;
+    }
+  }
+}
+@media screen and (min-width:1500px) {
+    .apps{
+        background-image:url('../img/apps_bg_lrg.jpg');
+
+    }
+}
+@media screen and (min-width:1026px) and (max-width:1150px){
+    .apps{
+        background-position:65%;
+    }
+}
+@media screen and (max-width:1025px){
+    .apps{
+        background-position:30%;
+    }
+
+    .app-content{
+        margin-top:0;
+        background-color:#1b1b1b;
+        padding-top:20px;
+        padding-bottom:40px;
+        h2{
+            color:$white;
+            margin:0px;
+        }
+        .green{
+            color:$apple;
+            margin-bottom:.5rem;
+        }
+        p{
+            color:$white;
+        }
+
+        .app-icons{
+            a {
+                opacity:0.8;
+                margin-right:10px;
+                margin-top:10px;
+                img{
+                    height:40px;
+
+                }
+            }
+            a:hover{
+                opacity:1;
+            }
+        }
+
+
+    }
+
+}
+
+
+@media (max-width: 1024px) {
+	.ces_home_logo{
+	margin-left: 0px;
+}
+	.nav_preorder{
+		margin-right: 0px;
+	}
+	#socialBar{
+		height: auto;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		.columns{
+			margin-top: 0px;
+		}
+		.mailSignUpBtn{
+			width: 100%;
+			margin-left: 0px;
+			margin-top: 16px;
+			font-family: "FlySans-Medium", Arial, sans-serif;
+		}
+		.follow{
+			margin-left: 0px;
+			width: 100%;
+			line-height: 60px !important;
+			margin-bottom: 17px;
+		}
+		.social-links{
+			/*line-height: 1;*/
+		}
+		.socialIcons{
+			margin-left: 3px;
+						margin-bottom: 22px;
+
+		}
+		.getUpdates{
+		line-height: 60px !important;
+			width:100%;
+			padding-top: 0px;
+			margin-bottom: 18px;
+
+		}
+		input{
+			width: 100%;
+			margin-left: 0px;
+			margin-bottom: 0px;
+		}
+	}
+}
+@media screen and (max-width: 750px){
+	#videoHeadlines{
+		h1{
+			font-size: 40px;
+		}
+		h2{
+			font-size: 20px;
+		}
+	}
+
+}
+@media only screen and (max-width: 1100px) and (min-width: 701px){
+	.sl2, .sl3{
+		margin-left: -290px !important;
+	}
+}
+@media only screen and (max-width: 700px){
+
+    .athlete_intro{
+        padding:0px;
+    }
+}
+@media only screen and (max-width: 640px){
+	#socialBar{
+		height: auto;
+	}
+}
+@media only screen and (max-width: 64em) and (min-width: 40.063em){
+	.base-content {
+	 margin: 0em 0em !important;
+	}
+}
+
+@media screen and (max-width: 640px){
+	#socialBar{
+ 		.columns{
+ 			margin-top: 10px;
+ 		}
+
+	}
+
+
+}
+
+
+
+@media screen and (max-width: 500px){
+
+	#videoHeadlines{
+		top:70px;
+	}
+}
+
+@media screen and (max-width: 385px){
+	#videoHeadlines{
+		h1{
+			font-size: 30px;
+		}
+		h2{
+			font-size: 15px;
+		}
+	}
+
+}
+@media screen and (max-width: 360px){
+	.top-bar .button{
+		top:0px;
+	}
+}
+@media screen and (max-width: 331px){
+	.hide_331{
+		display: none;
+	}
+	.show_330{
+		display: inline-block;
+		width: 140px;
+	}
+}
+
+@media (max-width: 641px) and (min-width: 0px){
+	section.footer{
+		padding-top: 0px;
+		.row{
+			padding-top: 0px;
+		}
+	}
+}

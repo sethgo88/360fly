@@ -1,0 +1,31 @@
+/* -- Responsive Queries -- */
+/* -- Desktop -- */
+@media (min-width:1025px) and (max-width:9999px) {
+
+}
+/* -- Responsive Queries -- */
+/* -- Tablet -- */
+@media (min-width:642px) and (max-width:1024px) {
+    .video-author {
+      float: left;
+      .circle {
+        margin-left: 0px;
+      }
+    }
+}
+/* -- Responsive Queries -- */
+/* -- Mobile -- */
+@media (min-width:0px) and (max-width:641px) {
+    .video-author {
+      float: left;
+      .circle {
+        margin-left: 0px;
+      }
+    }
+    .video-data {
+        .video-title {
+          font-size: 30px;
+          margin: 0px;
+        }
+    }
+}

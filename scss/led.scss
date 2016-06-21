@@ -1,0 +1,162 @@
+.led {
+  padding: 20px 0px 0px 0px;
+  h1, h2, h3, h4, h5, h6 {
+    color: white;
+  }
+  img {
+    margin-top: 132px;
+  }
+  img.led-light {
+    width: 11px;
+    margin-right: 12px;
+    margin-top: 1px;
+  }
+  img.led-light-three {
+    width: 33px;
+    margin-left: -22px;
+    margin-right: 12px;
+    margin-top: 0px;
+  }
+  img.led-light-two {
+    width: 22px;
+    margin-left: -12px;
+    margin-right: 12px;
+    margin-top: 0px;
+  }
+  hr {
+    border: 2px solid #333333;
+  }
+  p {
+    color: white;
+  }
+  p:last-child {
+    padding-bottom: 10px;
+  }
+  ul {
+    a {
+      color: #4d4d4d;
+    }
+    a:hover {
+      color: #bdbdbd;
+    }
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: white;
+    li {
+      line-height: 38px;
+      font-size: 18px;
+    }
+  }
+  .camera {
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+  .triangle {
+    position: absolute;
+    z-index: 9999;
+    height: 24px;
+    width: 20px;
+    top: 325px;
+    left: 40px;
+  }
+  li span strong {
+    color: $primary-color;
+  }
+  li span.active {
+    color: white;
+  }
+  span.active span {
+    margin-left: 25px;
+  }
+  .download {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    a {
+      float: right;
+    }
+  }
+}
+
+/* -- Responsive Queries -- */
+/* -- Desktop -- */
+@media (min-width:1025px) and (max-width:9999px) {
+
+}
+/* -- Responsive Queries -- */
+/* -- Tablet -- */
+@media (min-width:642px) and (max-width:1024px) {
+  .led {
+    .camera {
+      width: 600px;
+      margin: 0 auto;
+    }
+    img {
+      margin-top: 20px;
+    }
+    .triangle {
+      position: absolute;
+      z-index: 9999;
+      height: 24px;
+      width: 20px;
+      top: 240px;
+      left: 47px;
+    }
+    ul li {
+      line-height: 38px;
+      font-size: 22px;
+    }
+    .states {
+      margin: 0px 0px 0px 15px;
+    }
+    .download {
+      padding-top: 40px;
+      padding-bottom: 20px;
+      a {
+        float: left;
+      }
+    }
+  }
+}
+/* -- Responsive Queries -- */
+/* -- Mobile -- */
+@media (min-width:0px) and (max-width:641px) {
+  .led {
+    .camera {
+      width: 320px;
+      margin: 0 auto;
+    }
+    img {
+      margin-top: 20px;
+    }
+    .triangle {
+      position: absolute;
+      z-index: 9999;
+      height: 22px;
+      width: 18px;
+      top: 130px;
+      left: 22px;
+    }
+    ul li {
+      line-height: 38px;
+      font-size: 22px;
+    }
+    .states {
+      height: 310px;
+      overflow: auto;
+      margin: 15px -300px 15px 15px;
+    }
+  }
+  .links {
+    overflow: hidden;
+    padding-top: 0px;
+  }
+  .download {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    a {
+      float: left;
+    }
+  }
+}

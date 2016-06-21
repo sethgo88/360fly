@@ -1,0 +1,39 @@
+<div class="productSlider col-lg-11 col-md-10 col-sm-10 col-xs-10 center-block">
+  <div>
+      <article class="product_pod">
+
+                     {% with image=product.primary_image %}
+                         {% thumbnail image.original "x500" upscale=False as thumb %}
+                         <a href="{{ product.get_absolute_url }}"><img src="{{ thumb.url }}" alt="{{ product.get_title }}" class="thumbnail"></a>
+                         {% endthumbnail %}
+                     {% endwith %}
+
+                 <div class="product_price clearfix">
+                    <p class="product-title"><a href="{{ product.get_absolute_url }}" title="{{ product.get_title }}">{{ product.get_title|truncatewords:4 }}</a></p>
+
+                     <a href="{{product.get_absolute_url }}" class="btn btn-primary ">More Info</a>
+                 </div>
+         </article>
+  </div>
+</div>
+<script type="text/javascript">
+$( document ).ready(function() {
+
+    $('.productSlider').slick({
+      centerMode: true,
+      slidesToShow: 3,
+      centerPadding:'0px',
+      slidesToScroll: 1,
+      prevArrow: '<i class="slick-prev left fa fa-angle-left"></i>',
+      nextArrow: '<i class="slick-next right fa fa-angle-right"></i>',
+      responsive: [
+                {
+                  breakpoint: 768,
+                  settings: {
+                    slidesToShow: 1
+                  }
+                }
+              ]
+    });
+ });
+</script>

@@ -3,169 +3,566 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation</title>
+    <title>360 Fly</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="layerslider/css/layerslider.css" />
+
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
-  <body>
-    <div class="row">
-      <div class="large-12 columns">
-        <h1>Welcome to Foundation</h1>
-      </div>
+  <body id="home">
+  	<div class="body-wrap">
+	    <nav class="top-bar" id="nav-top" data-topbar role="navigation">
+	      <ul class="title-area">
+	        <li class="toggle-topbar">
+	          <a href="#">
+	            <div id="nav-icon3">
+	              <span></span>
+	              <span></span>
+	              <span></span>
+	              <span></span>
+	            </div>
+	          </a>
+	        </li>
+	      </ul>
+
+	      <section class="top-bar-section">
+	        <div class="row">
+	          <div>
+	            <div class="row collapse nav_logo hide-for-large-up">
+	              <a href="/" class="mobile_logo">
+	                <span class="icon-fly-logo header_logo brand-gradient"></span>
+	              </a>
+	            </div>
+
+	            <div class="show-for-large-up">
+	              <a href="/">
+	                <span class="icon-fly-logo header_logo brand-gradient"></span>
+	              </a>
+	            </div>
+	            <span class="menu-section default-padding hide-for-large-up">Main</span>
+	            <ul class="right default-padding main-links">
+		            <li><a href="https://shop.360fly.com">SHOP</a></li>
+		            <li><a href="/apps/">APPS</a></li>
+		            <li><a href="/videos/">VIDEO</a></li>
+		            <li><a href="https://support.360fly.com/">COMMUNITY</a></li>
+		            <li><a href="/store-locator/">SUPPORT</a></li>
+		            <li class="hide-for-large-up"><a href="#">SIGNUP</a></li>
+		            <li class="hide-for-large-up"><a href="#">LOGIN</a></li>
+		            <li><a href="#"><span class="icon-shopping-cart"></span></a></li>
+	            </ul>
+	          </div>
+	        </div>
+	      </section>
+
+	      <section class="sub-nav-section show-for-large-up">
+	        <div class="row">
+	          <div>
+	            <ul class="right default-padding account-menu">
+	            	<li><a href="#">SIGNUP</a></li>
+	            	<li><a href="#">LOGIN</a></li>
+	            </ul>
+	            <ul class="right default-padding">
+	              <li><a href="#">CAMERA</a></li>
+	              <li><a href="#">ACCESSORIES</a></li>
+	              <li><a href="#">FAQs</a></li>
+	            </ul>
+	          </div>
+	        </div>
+	      </section>
+	    </nav>
+
+	    <div class="hero-slider-wrapper">
+	    	<div id="hero-slider" style="width: 100%; height: 720px;">
+		    	<div class="ls-slide" data-ls="transition2d: 5; timeshift: -1000;">
+		    		<div class="ls-l ls-background" style="left: 50%; top: 50%; height: 100%; width: 110%; background: url(img/layerslider/slide-01/bg.jpg) no-repeat center; background-size: cover;" data-ls="parallaxlevel: -5;"></div>
+		    		<!-- parallax layers -->
+		    		<img src="img/layerslider/slide-01/camera.png" data-ls="offsetyin: bottom; offsetyout: bottom;" style="left: 50%; top: 110%;" class="ls-l" alt="" />
+		    		<!-- text layers -->
+		    		<h2 class="ls-l" data-ls="offsetxin: left; offsetxout: right;" style="top: 40%; left: 50%; white-space: nowrap;">ONE LENS. NO SEAMS.</h2>
+		    		<h2 class="ls-l bold" data-ls="offsetxin: right; offsetxout: left;" style="top: 50%; left: 50%; white-space: nowrap;" white-space: nowrap;>LIMITLESS POSSIBILITIES</h2>
+		    	</div>
+		    	<div class="ls-slide" data-ls="transition2d: 5; timeshift: -1000;">
+		    		<div class="ls-l ls-background" style="left: 50%; top: 50%; height: 110%; width: 110%; background: url(img/layerslider/slide-02/bg.jpg) no-repeat center; background-size: cover;" data-ls="parallaxlevel: -5;"></div>
+		    		<!-- parallax layers -->
+		    		<img src="img/layerslider/slide-02/camera.png" data-ls="offsetyin: bottom; offsetyout: bottom;" style="left: 20%; top: 90%;" class="ls-l" alt="" />
+		    		<img src="img/layerslider/slide-02/camera-bottom.png" data-ls="offsetyin: top; offsetyout: top;" style="left: 70%; top: 38%;" class="ls-l" alt="" />
+		    		<!-- text layers -->
+		    		<h2 class="ls-l large-4k" data-ls="offsetyin: top; offsetyout: bottom;" style="top: 50%; left: 50%; white-space: nowrap;">4K<span>IS</span>HERE.</h2>
+		    		<h2 class="ls-l small-4k" data-ls="offsetyin: bottom; offsetyout: top;" style="top: 62%; left: 50%; white-space: nowrap;">Never before has one ball changed the game so much.</h2>
+		    	</div>
+		    	<div class="ls-slide app-slide" data-ls="transition2d: 5; timeshift: -1000;">
+		    		<div class="ls-l" data-ls="offsetxin: 0; offsetyin: 0;" style="left: 50%; top: 50%; height: 100%; width: 100%; background: url(img/layerslider/slide-03/bg.jpg) no-repeat center; background-size: cover;"></div>
+		    		<!-- parallax layers -->
+		    		<img src="img/layerslider/slide-03/devices.png" data-ls="offsetxin: right; fadein: true; scalexin: 800; scaleyin: 800;" style="left: 430px" class="ls-l" alt="" />
+		    		<!-- text layers -->
+		    		<h2 class="ls-l" data-ls="offsetyin: bottom;" style="top: 35%; left: 0px; width: 400px; white-space: nowrap">LIVE VIDEO'S<br> NEVER BEEN<br> SO ALIVE.</h2>
+		    		<p class="ls-l" data-ls="offsetyin: bottom; delayin: 200" style="top: 64%; left: 0px; width: 400px;">With your 360fly camera, the free Livit mobile app and a smartphone, you have the power to live stream interactive 360&#176; video to family and friends around the globe.</p>
+		    		<div class="ls-l hide-for-small-only app-links" data-ls="offsetyin: bottom; delayin: 400;" style="top: 82%;">
+		    			<a href="https://itunes.apple.com/us/app/livit-live-video-and-vr/id896514048?mt=8" target="_blank"><img src="img/layerslider/slide-03/ios-app-btn.png" alt="App Store" /></a>
+		    			<a href="https://play.google.com/store/apps/details?id=com.livitnow.livit&hl=en" target="_blank"><img src="img/layerslider/slide-03/android-app-btn.png" alt="Google play" /></a>
+		    		</div>
+		    	</div>
+		        <div class="ls-slide" data-ls="transition2d: 5;">
+		          <div class="ls-l" style="left: 50%" data-ls="offsetxin: 0; offsetyin: 0;">
+		            <iframe width="1000" height="720" src="https://www.youtube.com/embed/n-Goc4muL_c?rel=0" frameborder="0" allowfullscreen></iframe>
+		          </div>  
+		        </div>
+	    	</div>
+	    </div>
+	    <!-- /hero-slider -->
+
+	    <div class="video-player">
+	      <div class="video-container">
+	        <img src="img/video-placeholder.jpg" />
+	        <!-- {% include "flyvideo/video_playback_fragment.html" %} -->
+	      </div>
+	    </div>
+	    <!-- /video player -->
+
+	    <div class="fov">
+	      <div class="row">
+	        <div class="medium-12 large-7 columns">
+	          <!-- parallax dome -->
+	          <div id="fov-wrap">
+	          	<img src="img/parallax/fov/fov__imagesequence_03.png" />
+	          </div>
+	        </div>
+	        <div class="medium-12 large-5 columns text-right">
+	          <div class="valign-middle">
+		          <h2>MISS NOTHING.</h2>
+		          <h3>Full 360&#176; vertical x 240&#176; horizontal field of view.</h3>
+		          <p>Life doesn't just come at you straight on. Which is why the 360fly 4K and 360fly HD put you in the center of the action while capturing the entire world all around you.</p>
+		          <a href="#" class="button round slim">LEARN MORE</a>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+	    <!-- /fov -->
+
+	    <div class="pov">
+	      <div class="row">
+	        <div class="small-12 medium-7 columns">
+	          <h2>CAPTURE EVERY POV. <span class="line-break">PLUS ONE.</span></h2>
+	          <h3>360fly 4K First-Person POV.</h3>
+	          <p>Go from recording in 360&#176; video to standard 16:9 format and back with ease. With the 360fly 4K’s First-Person mode activated, just orient or mount your camera with its lens facing forward and OnePush button centered/facing up and use your 360fly like traditional point-and-shoot action cameras.</p>
+	          <a href="#" class="button round slim">LEARN MORE</a>
+	        </div>
+	        <div class="small-12 medium-5 columns">
+	        	<div id="pov-wrap" class="hide-for-small-only">
+	        		<img src="img/parallax/pov/pov__imagesequence_01.png" />
+	        	</div>
+	        	<div class="pov-mobile show-for-small-only">
+	        		<img src="img/parallax/pov/pov_mobile.png" />
+	        	</div>
+	        </div>
+	      </div>
+	    </div>
+	    <!-- /pov -->
+
+	    <!-- dirt -->
+	    <div class="elements dirt">
+	      <div class="row">
+	        <div class="small-12 medium-6 columns">
+	          <h2 class="large">DUSTPROOF<br>AND<br>SHOCKPROOF.</h2>
+	          <a href="#" class="button round slim">LEARN MORE</a>
+	        </div>
+	        <div class="element-wrap">
+	        	<div class="back">
+	        		<img src="img/elements/dirt/dirt-back.png" />
+	        	</div>
+	        	<div id="element-camera" class="camera" style="top: -1100px;">
+	        		<img src="img/elements/dirt/camera.png" />
+	        	</div>
+	        	<div class="front">
+	        		<img src="img/elements/dirt/dirt-front.png" />
+	        	</div>
+	        </div>
+	        <script type="text/javascript">
+	        </script>
+	      </div>
+	    </div>
+	    <!-- /elements -->
+
+	    <!-- snow --
+	    <div class="elements snow">
+	      <div class="row">
+	        <div class="small-12 medium-6 columns">
+	          <h2 class="large">SNOWPROOF<br>AND<br>SHOCKPROOF.</h2>
+	          <a href="#" class="button round slim">LEARN MORE</a>
+	        </div>
+	        <div class="element-wrap">
+	        	<div class="back">
+	        		<img src="img/elements/snow/snow-back.png" />
+	        	</div>
+	        	<div id="element-camera" class="camera" style="top: -1100px;">
+	        		<img src="img/elements/snow/camera.png" />
+	        	</div>
+	        	<div class="front">
+	        		<img src="img/elements/snow/snow-front.png" />
+	        	</div>
+	        </div>
+	        <script type="text/javascript">
+	        </script>
+	      </div>
+	    </div>
+	    <!-- /snow -->
+
+	    <div class="product-promotions">
+	    	<div class="row">
+	    		<h2>GO ANYWHERE. <span class="line-break">MOUNT EVERYWHERE.</span></h2>
+		      <div class="productSlider small-10 small-offset-1">
+		        <div>
+		          <article class="product_pod">
+					<a href="https://shop.360fly.com/catalogue/action-cam-adapter_2/"><img src="img/accessories/HD_Action_Mount.png" alt="" class="thumbnail"></a>
+
+		             <div class="product_price clearfix">
+		                <p class="product-title"><a href="https://shop.360fly.com/catalogue/action-cam-adapter_2/" title="Action Cam Mount (HD)">Action Cam Mount (HD)</a></p>
+
+		                <a href="https://shop.360fly.com/catalogue/action-cam-adapter_2/" class="button round slim ">MORE INFO</a>
+		             </div>
+		          </article>
+		        </div>
+		        <div>
+		          <article class="product_pod">
+					<a href=""><img src="img/accessories/HD_Handlebar_mount.jpg" alt="" class="thumbnail"></a>
+
+		             <div class="product_price clearfix">
+		                <p class="product-title"><a href="https://shop.360fly.com/catalogue/handlebar-mount_6/" title="Handlebar Mount (HD)">Handlebar Mount (HD)</a></p>
+
+		                <a href="https://shop.360fly.com/catalogue/handlebar-mount_6/" class="button round slim ">MORE INFO</a>
+		             </div>
+		          </article>
+		        </div>
+		        <div>
+		          <article class="product_pod">
+					<a href=""><img src="img/accessories/HD_Suction_Mount.jpg" alt="" class="thumbnail"></a>
+
+		             <div class="product_price clearfix">
+		                <p class="product-title"><a href="https://shop.360fly.com/catalogue/suction-cup-mount_8/" title="Suction Mount (HD)">Suction Mount (HD)</a></p>
+
+		                <a href="https://shop.360fly.com/catalogue/suction-cup-mount_8/" class="button round slim ">MORE INFO</a>
+		             </div>
+		          </article>
+		        </div>
+		        <div>
+		          <article class="product_pod">
+					<a href=""><img src="img/accessories/HD_Tripod_Adapter.jpg" alt="" class="thumbnail"></a>
+
+		             <div class="product_price clearfix">
+		                <p class="product-title"><a href="https://shop.360fly.com/catalogue/tripod-adapter_11/" title="Tripod Adapter (HD)">Tripod Adapter (HD)</a></p>
+
+		                <a href="https://shop.360fly.com/catalogue/tripod-adapter_11/" class="button round slim ">MORE INFO</a>
+		             </div>
+		          </article>
+		        </div>
+		        <div>
+		          <article class="product_pod">
+					<a href=""><img src="img/accessories/HD_Helmet_Mount.jpg" alt="" class="thumbnail"></a>
+
+		             <div class="product_price clearfix">
+		                <p class="product-title"><a href="https://shop.360fly.com/catalogue/vented-helmet-strap-mount_12/" title="Vented Helmet Mount (HD)">Vented Helmet Mount (HD)</a></p>
+
+		                <a href="https://shop.360fly.com/catalogue/vented-helmet-strap-mount_12/" class="button round slim ">MORE INFO</a>
+		             </div>
+		          </article>
+		        </div>
+		        <div>
+		          <article class="product_pod">
+					<a href=""><img src="img/accessories/powis_vr_headset.jpeg" alt="" class="thumbnail"></a>
+
+		             <div class="product_price clearfix">
+		                <p class="product-title"><a href="https://shop.360fly.com/catalogue/powis-vr-headset_13/" title="POWIS VR Headset">POWIS VR Headset</a></p>
+
+		                <a href="https://shop.360fly.com/catalogue/powis-vr-headset_13/" class="button round slim ">MORE INFO</a>
+		             </div>
+		          </article>
+		        </div>
+		        <div>
+		          <article class="product_pod">
+					<a href=""><img src="img/accessories/4K_Suction_Mount.png" alt="" class="thumbnail"></a>
+
+		             <div class="product_price clearfix">
+		                <p class="product-title"><a href="https://shop.360fly.com/catalogue/suction-mount-4k_15/" title="Suction Mount (4K)">Suction Mount (4K)</a></p>
+
+		                <a href="https://shop.360fly.com/catalogue/suction-mount-4k_15/" class="button round slim ">MORE INFO</a>
+		             </div>
+		          </article>
+		        </div>
+		        <div>
+		          <article class="product_pod">
+					<a href=""><img src="img/accessories/4K_Action_Mount.jpg" alt="" class="thumbnail"></a>
+
+		             <div class="product_price clearfix">
+		                <p class="product-title"><a href="https://shop.360fly.com/catalogue/action-cam-adapter-4k_16/" title="Action Cam Adapter (4K)">Action Cam Adapter (4K)</a></p>
+
+		                <a href="https://shop.360fly.com/catalogue/action-cam-adapter-4k_16/" class="button round slim ">MORE INFO</a>
+		             </div>
+		          </article>
+		        </div>
+		      </div>
+		    </div>
+	    </div>
+	    <!-- /accessories -->
+
+	    <div class="prefooter">
+	      <div class="row">
+	        <div class="small-12 large-6 columns">
+	          <h2>THE APPS THAT <span class="line-break">POWER IT ALL.</span></h2>
+	          <h3>360fly mobile and desktop Director apps.</h3>
+	          <p>The 360fly mobile app turns your smartphone into your camera’s viewfinder and editing suite—and gives you the power to share 360&#176; and standard video directly from your iOS or Android device to social media. With many of the same innovative tools as the 360fly mobile app, the desktop Director lets you use the power of your home computer to edit, add effects to, and share your 360&#176; videos.</p>
+	          <a href="#" class="button round slim">LEARN MORE</a>
+	        </div>
+	        <div class="small-12 large-6 columns app-img">
+	          <img src="img/phone-desktop-app.png" />
+	        </div>
+	      </div>
+	    </div>
+	    <!-- /prefooter -->
+
+	    <footer class="footer">
+	      <div class="row">
+	      	<div class="small-12 columns">
+	          <a class="logo" href="/">
+	            <span class="icon-logo header_logo brand-gradient"></span>
+	          </a>
+	        </div>
+	        <div class="small-12 small-push-12 large-6 columns">
+	          <p class="footer-links">
+	            <a href="#">Blog</a>
+	            <a href="#">Forums</a>
+	            <a href="#">About Us</a>
+	            <a href="#">Press</a>
+	            <a href="#">Carrers</a>
+	            <a href="#">B2B Portal</a>
+	          </p>
+	          <p class="copyright">© 2016 360fly, Inc. All Rights Reserved. <br>360fly is a trademark of 360fly, Inc.</p>
+	          <p class="footer-links">
+	            <a href="#">Contact Us</a>
+	            <a href="#">Terms of Use</a>
+	            <a href="#">Privacy Policy</a>
+	          </p>
+	        </div>
+	        <div class="small-12 small-pull-12 large-6 columns">
+	          <ul class="inline-list-right connect-menu">
+	            <li><p>STAY UP TO DATE <br></p></li>
+	            <li><a href="#" class="button round slim inverse grey">EMAIL</a></li>
+	            <li><a href="#" class="button round slim inverse grey">FIND A RETAILER</a></li>
+	          </ul>
+	          <ul class="inline-list-right social-icons">
+	            <li><a href="https://instagram.com/360fly"><span class="icon-instagram-jul15 footer_icon"></span></a></li>
+	            <li><a href="https://www.facebook.com/360fly"><span class="icon-facebook-jul15 footer_icon"></span></a></li>
+	            <li><a href="https://twitter.com/360fly"><span class="icon-twitter-jul15 footer_icon"></span></a></li>
+	            <li><a href="http://blog.360fly.com/"><span class="icon-tumblr-jul15 footer_icon"></span></a></li>
+	            <li><a href="https://www.youtube.com/channel/UCBNph_5dIKPQFS3IsIVXJfQ"><span class="icon-youtube-jul15 footer_icon"></span></a></li>
+	          </ul>
+	        </div>
+	      </div>
+	    </footer>
     </div>
     
-    <div class="row">
-      <div class="large-12 columns">
-        <div class="panel">
-          <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-          <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-          <p>Once you've exhausted the fun in this document, you should check out:</p>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://zurb.com/university/code-skills">Foundation Code Skills</a><br />These online courses offer you a chance to better understand how Foundation works and how you can master it to create awesome projects.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://foundation.zurb.com/forum">Foundation Forum</a><br />Join the Foundation community to ask a question or show off your knowlege.</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 medium-push-2 columns">
-              <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-            </div>
-            <div class="large-4 medium-4 medium-pull-2 columns">
-              <p><a href="https://twitter.com/ZURBfoundation">@zurbfoundation</a><br />Ping us on Twitter if you have questions. When you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-            </div>        
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="large-8 medium-8 columns">
-        <h5>Here&rsquo;s your basic grid:</h5>
-        <!-- Grid Example -->
-
-        <div class="row">
-          <div class="large-12 columns">
-            <div class="callout panel">
-              <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-        </div>
-        
-        <hr />
-                
-        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-        <form>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-12.columns" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <div class="row collapse">
-                <label>Input Label</label>
-                <div class="small-9 columns">
-                  <input type="text" placeholder="small-9.columns" />
-                </div>
-                <div class="small-3 columns">
-                  <span class="postfix">.com</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Select Box</label>
-              <select>
-                <option value="husker">Husker</option>
-                <option value="starbuck">Starbuck</option>
-                <option value="hotdog">Hot Dog</option>
-                <option value="apollo">Apollo</option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-6 medium-6 columns">
-              <label>Choose Your Favorite</label>
-              <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-              <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-            </div>
-            <div class="large-6 medium-6 columns">
-              <label>Check these out</label>
-              <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-              <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Textarea Label</label>
-              <textarea placeholder="small-12.columns"></textarea>
-            </div>
-          </div>
-        </form>
-      </div>     
-
-      <div class="large-4 medium-4 columns">
-        <h5>Try one of these buttons:</h5>
-        <p><a href="#" class="small button">Simple Button</a><br/>
-        <a href="#" class="small radius button">Radius Button</a><br/>
-        <a href="#" class="small round button">Round Button</a><br/>            
-        <a href="#" class="medium success button">Success Btn</a><br/>
-        <a href="#" class="medium alert button">Alert Btn</a><br/>
-        <a href="#" class="medium secondary button">Secondary Btn</a></p>           
-        <div class="panel">
-          <h5>So many components, girl!</h5>
-          <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on making them your own.</p>
-          <a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>          
-        </div>
-      </div>
-    </div>
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="layerslider/js/greensock.js"></script>
+    <script src="layerslider/js/layerslider.transitions.js"></script>
+    <script src="layerslider/js/layerslider.kreaturamedia.jquery.js"></script>
+    <script src="js/greensock/TweenMax.min.js"></script>
+    <script src="js/ScrollMagic.js"></script>
+    <script src="js/debug.addIndicators.js"></script>
+    <script src="js/animation.gsap.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
     <script src="js/app.js"></script>
+
+  <script type="text/javascript">
+		$(document).ready(function() {
+
+		    $('.productSlider').slick({
+		      centerMode: true,
+		      slidesToShow: 3,
+		      centerPadding:'0px',
+		      slidesToScroll: 1,
+		      prevArrow: '<i class="slick-prev left fa fa-angle-left"></i>',
+		      nextArrow: '<i class="slick-next right fa fa-angle-right"></i>',
+		      responsive: [
+		                {
+		                  breakpoint: 768,
+		                  settings: {
+		                    slidesToShow: 1
+		                  }
+		                }
+		              ]
+		    });
+		 });
+	</script>
+    <script>
+    	$(document).foundation();
+		$(document).ready(function(){
+			$('#hero-slider').layerSlider({
+				responsive: false, 
+				responsiveUnder: 1000,
+				layersContainer: 1000,
+				autoStart: false,
+				skinsPath: 'layerslider/skins/',
+				globalBGColor: 'black',
+				navStartStop: false,
+				thumbnailNavigation: 'disabled',
+        		autoPlayVideos: false
+			});
+			if(navigator.userAgent.toLowerCase().indexOf("android") > -1){
+         		$('.app-slide').append("<a href='https://play.google.com/store/apps/details?id=com.livitnow.livit&hl=en' class='ls-link'></a>");
+		    }
+		    if(navigator.userAgent.toLowerCase().indexOf("iphone") > -1){
+         		$('.app-slide').append("<a href='https://itunes.apple.com/us/app/livit-live-video-and-vr/id896514048?mt=8' class='ls-link'></a>");
+		    }
+		});
+	</script>
+  <script type="text/javascript">
+  	function preloadImages(imageArray){
+  		for( i=0; i < imageArray.length; i++){
+  			var imageObject = new Image();
+  			imageObject.src = imageArray[i];
+  		}
+  	}
+    //field of view
+    var fov_images = [
+    	"../img/parallax/fov/fov__imagesequence_03.png",
+    	"../img/parallax/fov/fov__imagesequence_03.png",
+    	"../img/parallax/fov/fov__imagesequence_04.png",
+    	"../img/parallax/fov/fov__imagesequence_04.png",
+    	"../img/parallax/fov/fov__imagesequence_05.png",
+    	"../img/parallax/fov/fov__imagesequence_05.png",
+    	"../img/parallax/fov/fov__imagesequence_06.png",
+    	"../img/parallax/fov/fov__imagesequence_06.png",
+    	"../img/parallax/fov/fov__imagesequence_07.png",
+    	"../img/parallax/fov/fov__imagesequence_07.png",
+    	"../img/parallax/fov/fov__imagesequence_08.png",
+    	"../img/parallax/fov/fov__imagesequence_08.png",
+    	"../img/parallax/fov/fov__imagesequence_09.png",
+    	"../img/parallax/fov/fov__imagesequence_09.png",
+    	"../img/parallax/fov/fov__imagesequence_10.png",
+    	"../img/parallax/fov/fov__imagesequence_10.png",
+    	"../img/parallax/fov/fov__imagesequence_11.png",
+    	"../img/parallax/fov/fov__imagesequence_11.png",
+    	"../img/parallax/fov/fov__imagesequence_12.png",
+    	"../img/parallax/fov/fov__imagesequence_12.png",
+    	"../img/parallax/fov/fov__imagesequence_13.png",
+    	"../img/parallax/fov/fov__imagesequence_13.png",
+    	"../img/parallax/fov/fov__imagesequence_14.png",
+    	"../img/parallax/fov/fov__imagesequence_14.png",
+    	"../img/parallax/fov/fov__imagesequence_15.png",
+    	"../img/parallax/fov/fov__imagesequence_15.png",
+    	"../img/parallax/fov/fov__imagesequence_16.png",
+    	"../img/parallax/fov/fov__imagesequence_16.png",
+    	"../img/parallax/fov/fov__imagesequence_17.png",
+    	"../img/parallax/fov/fov__imagesequence_17.png",
+    	"../img/parallax/fov/fov__imagesequence_18.png",
+    	"../img/parallax/fov/fov__imagesequence_18.png",
+    	"../img/parallax/fov/fov__imagesequence_19.png",
+    	"../img/parallax/fov/fov__imagesequence_19.png",
+    	"../img/parallax/fov/fov__imagesequence_20.png",
+    	"../img/parallax/fov/fov__imagesequence_21.png",
+    	"../img/parallax/fov/fov__imagesequence_21.png",
+    	"../img/parallax/fov/fov__imagesequence_22.png",
+    	"../img/parallax/fov/fov__imagesequence_22.png",
+    	"../img/parallax/fov/fov__imagesequence_23.png",
+    	"../img/parallax/fov/fov__imagesequence_23.png",
+    	"../img/parallax/fov/fov__imagesequence_24.png",
+    	"../img/parallax/fov/fov__imagesequence_24.png",
+    	"../img/parallax/fov/fov__imagesequence_25.png",
+    	"../img/parallax/fov/fov__imagesequence_25.png",
+    	"../img/parallax/fov/fov__imagesequence_26.png",
+    	"../img/parallax/fov/fov__imagesequence_26.png",
+    	"../img/parallax/fov/fov__imagesequence_27.png",
+    	"../img/parallax/fov/fov__imagesequence_27.png",
+    	"../img/parallax/fov/fov__imagesequence_28.png",
+    	"../img/parallax/fov/fov__imagesequence_28.png",
+    	"../img/parallax/fov/fov__imagesequence_29.png",
+    	"../img/parallax/fov/fov__imagesequence_29.png",
+    	"../img/parallax/fov/fov__imagesequence_30.png",
+    	"../img/parallax/fov/fov__imagesequence_30.png",
+    	"../img/parallax/fov/fov__imagesequence_31.png",
+    	"../img/parallax/fov/fov__imagesequence_31.png",
+    	"../img/parallax/fov/fov__imagesequence_32.png",
+    	"../img/parallax/fov/fov__imagesequence_32.png",
+    	"../img/parallax/fov/fov__imagesequence_33.png",
+    	"../img/parallax/fov/fov__imagesequence_33.png",
+    	"../img/parallax/fov/fov__imagesequence_34.png",
+    	"../img/parallax/fov/fov__imagesequence_34.png",
+    	"../img/parallax/fov/fov__imagesequence_35.png",
+    	"../img/parallax/fov/fov__imagesequence_35.png",
+    	"../img/parallax/fov/fov__imagesequence_36.png",
+    	"../img/parallax/fov/fov__imagesequence_36.png",
+    	"../img/parallax/fov/fov__imagesequence_37.png",
+    	"../img/parallax/fov/fov__imagesequence_37.png"
+    ];
+    preloadImages(fov_images);
+
+    var fov_obj = {curImg: 0};
+    var fov_tween = TweenMax.to(fov_obj, 0.5,
+    	{
+    		curImg: fov_images.length -1,
+    		roundProps: "curImg",
+    		repeat: 1,
+    		immediateRender: true,
+    		ease: Linear.easeNone,
+    		onUpdate: function () {
+    			$('#fov-wrap img').attr("src", fov_images[fov_obj.curImg]);
+    		}
+    	}
+    );
+
+    var fov_controller = new ScrollMagic.Controller();
+
+    var fov_scene = new ScrollMagic.Scene({triggerElement: ".fov", triggerHook: "onEnter", duration: "130%"}).setTween(fov_tween).addTo(fov_controller);
+
+    // point of view
+    var pov_images = [
+    	"../img/parallax/pov/pov__imagesequence_01.png",
+    	"../img/parallax/pov/pov__imagesequence_02.png",
+    	"../img/parallax/pov/pov__imagesequence_03.png",
+    	"../img/parallax/pov/pov__imagesequence_04.png",
+    	"../img/parallax/pov/pov__imagesequence_05.png",
+    	"../img/parallax/pov/pov__imagesequence_06.png",
+    	"../img/parallax/pov/pov__imagesequence_07.png",
+    	"../img/parallax/pov/pov__imagesequence_08.png",
+    	"../img/parallax/pov/pov__imagesequence_09.png",
+    	"../img/parallax/pov/pov__imagesequence_10.png",
+    	"../img/parallax/pov/pov__imagesequence_11.png",
+    	"../img/parallax/pov/pov__imagesequence_12.png",
+    	"../img/parallax/pov/pov__imagesequence_13.png",
+    	"../img/parallax/pov/pov__imagesequence_14.png",
+    	"../img/parallax/pov/pov__imagesequence_15.png",
+    	"../img/parallax/pov/pov__imagesequence_16.png",
+    	"../img/parallax/pov/pov__imagesequence_17.png",
+    ];
+    preloadImages(pov_images);
+
+    var pov_obj = {curImg: 0};
+    var pov_tween = TweenMax.to(pov_obj, 0.5,
+    	{
+    		curImg: pov_images.length -1,
+    		roundProps: "curImg",
+    		repeat: 0,
+    		immediateRender: true,
+    		ease: Linear.easeNone,
+    		onUpdate: function () {
+    			$('#pov-wrap img').attr("src", pov_images[pov_obj.curImg]);
+    		}
+    	}
+    );
+
+    var pov_controller = new ScrollMagic.Controller();
+
+    var pov_scene = new ScrollMagic.Scene({triggerElement: ".pov", triggerHook: "onEnter", duration: "600"}).setTween(pov_tween).addTo(pov_controller);
+
+
+	var elementController = new ScrollMagic.Controller();
+	var elementTween = TweenMax.to("#element-camera", 0.5, {ease: Power2.easeOut, top: "+=842"});
+	var elementScene = new ScrollMagic.Scene({triggerElement: ".elements", duration: "500"}).setTween(elementTween).addTo(elementController);
+  </script>
+  
   </body>
+
 </html>
