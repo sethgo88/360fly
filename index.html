@@ -427,6 +427,10 @@
   	}
     //field of view
     var fov_images = [
+    	"../img/parallax/fov/fov__imagesequence_01.png",
+    	"../img/parallax/fov/fov__imagesequence_01.png",
+    	"../img/parallax/fov/fov__imagesequence_02.png",
+    	"../img/parallax/fov/fov__imagesequence_02.png",
     	"../img/parallax/fov/fov__imagesequence_03.png",
     	"../img/parallax/fov/fov__imagesequence_03.png",
     	"../img/parallax/fov/fov__imagesequence_04.png",
@@ -495,7 +499,59 @@
     	"../img/parallax/fov/fov__imagesequence_36.png",
     	"../img/parallax/fov/fov__imagesequence_36.png",
     	"../img/parallax/fov/fov__imagesequence_37.png",
-    	"../img/parallax/fov/fov__imagesequence_37.png"
+    	"../img/parallax/fov/fov__imagesequence_38.png",
+    	"../img/parallax/fov/fov__imagesequence_39.png",
+    	"../img/parallax/fov/fov__imagesequence_40.png",
+    	"../img/parallax/fov/fov__imagesequence_41.png",
+    	"../img/parallax/fov/fov__imagesequence_41.png",
+    	"../img/parallax/fov/fov__imagesequence_42.png",
+    	"../img/parallax/fov/fov__imagesequence_42.png",
+    	"../img/parallax/fov/fov__imagesequence_43.png",
+    	"../img/parallax/fov/fov__imagesequence_43.png",
+    	"../img/parallax/fov/fov__imagesequence_44.png",
+    	"../img/parallax/fov/fov__imagesequence_44.png",
+    	"../img/parallax/fov/fov__imagesequence_45.png",
+    	"../img/parallax/fov/fov__imagesequence_45.png",
+    	"../img/parallax/fov/fov__imagesequence_46.png",
+    	"../img/parallax/fov/fov__imagesequence_46.png",
+    	"../img/parallax/fov/fov__imagesequence_47.png",
+    	"../img/parallax/fov/fov__imagesequence_48.png",
+    	"../img/parallax/fov/fov__imagesequence_49.png",
+    	"../img/parallax/fov/fov__imagesequence_50.png",
+    	"../img/parallax/fov/fov__imagesequence_51.png",
+    	"../img/parallax/fov/fov__imagesequence_51.png",
+    	"../img/parallax/fov/fov__imagesequence_52.png",
+    	"../img/parallax/fov/fov__imagesequence_52.png",
+    	"../img/parallax/fov/fov__imagesequence_53.png",
+    	"../img/parallax/fov/fov__imagesequence_53.png",
+    	"../img/parallax/fov/fov__imagesequence_54.png",
+    	"../img/parallax/fov/fov__imagesequence_54.png",
+    	"../img/parallax/fov/fov__imagesequence_55.png",
+    	"../img/parallax/fov/fov__imagesequence_55.png",
+    	"../img/parallax/fov/fov__imagesequence_56.png",
+    	"../img/parallax/fov/fov__imagesequence_56.png",
+    	"../img/parallax/fov/fov__imagesequence_57.png",
+    	"../img/parallax/fov/fov__imagesequence_58.png",
+    	"../img/parallax/fov/fov__imagesequence_59.png",
+    	"../img/parallax/fov/fov__imagesequence_60.png",
+    	"../img/parallax/fov/fov__imagesequence_61.png",
+    	"../img/parallax/fov/fov__imagesequence_61.png",
+    	"../img/parallax/fov/fov__imagesequence_62.png",
+    	"../img/parallax/fov/fov__imagesequence_62.png",
+    	"../img/parallax/fov/fov__imagesequence_63.png",
+    	"../img/parallax/fov/fov__imagesequence_63.png",
+    	"../img/parallax/fov/fov__imagesequence_64.png",
+    	"../img/parallax/fov/fov__imagesequence_64.png",
+    	"../img/parallax/fov/fov__imagesequence_65.png",
+    	"../img/parallax/fov/fov__imagesequence_65.png",
+    	"../img/parallax/fov/fov__imagesequence_66.png",
+    	"../img/parallax/fov/fov__imagesequence_66.png",
+    	"../img/parallax/fov/fov__imagesequence_67.png",
+    	"../img/parallax/fov/fov__imagesequence_68.png",
+    	"../img/parallax/fov/fov__imagesequence_69.png",
+    	"../img/parallax/fov/fov__imagesequence_70.png",
+    	"../img/parallax/fov/fov__imagesequence_71.png",
+    	"../img/parallax/fov/fov__imagesequence_71.png"
     ];
     preloadImages(fov_images);
 
@@ -504,7 +560,7 @@
     	{
     		curImg: fov_images.length -1,
     		roundProps: "curImg",
-    		repeat: 1,
+    		repeat: 0,
     		immediateRender: true,
     		ease: Linear.easeNone,
     		onUpdate: function () {
@@ -515,7 +571,7 @@
 
     var fov_controller = new ScrollMagic.Controller();
 
-    var fov_scene = new ScrollMagic.Scene({triggerElement: ".fov", triggerHook: "onEnter", duration: "130%"}).setTween(fov_tween).addTo(fov_controller);
+    var fov_scene = new ScrollMagic.Scene({triggerElement: "#fov-wrap", triggerHook: "onEnter", duration: "130%"}).setTween(fov_tween).addTo(fov_controller);
 
     // point of view
     var pov_images = [
