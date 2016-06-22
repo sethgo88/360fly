@@ -243,6 +243,10 @@ $textShadowST :  0px -1px 2px rgba(0, 0, 0, 0.63);
   display: inline-block;
 }
 
+%no-pointer {
+  pointer-events: none;
+}
+
 /* Images */
 
 .overlay-container {
@@ -1399,6 +1403,7 @@ footer {
       font-weight: 900;
       font-family: "FlySans-Medium", Arial, sans-serif;
     }
+
     #home {
         height: 100%;
         .body-wrap {
@@ -1489,14 +1494,18 @@ footer {
             margin: 0 rem-calc(-24) rem-calc(-50) rem-calc(-24);
           }
         }
-
         .elements {
-          background-repeat: no-repeat;
-          background-position: center;
-          background-size: cover;
-          padding: rem-calc(75) 0;
-          min-height: 828px;
+          padding-bottom: rem-calc(26);
           overflow: hidden;
+          .background-wrap {
+            overflow: visible !important;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            padding: rem-calc(75) 0;
+            min-height: 828px;
+          }
           h2 {
             font-size: rem-calc(76.7);
             line-height: rem-calc(70);
@@ -1512,6 +1521,7 @@ footer {
             bottom: -443px;
             left: 0px;
             width: 100%;
+            height: 0px;
             .back {
               position: absolute;
               top: -101px;
@@ -1521,18 +1531,49 @@ footer {
             .camera {
               position: absolute;
               top: -258px;
-              left: 123px;
-              width: 349px;
+              left: 173px;
+              width: 200px;
+              pointer-events: none;
             }
             .front {
               position: absolute;
-              top: -67px;
+              top: -88px;
               left: -15px;
               width: 550px;
             }
+            #dirt-spray-front {
+              position: absolute;
+              top: -149px;
+              left: -96px;
+              width: 635px;
+              -ms-transform: scale(0.5); /* IE 9 */
+              -webkit-transform: scale(0.5); /* Safari */
+              transform: scale(0.5);
+              @extend %no-pointer;
+            }
+            #dirt-back-spray-1 {
+              position: absolute;
+              top: -241px;
+              left: -96px;
+              width: 686px;
+              -ms-transform: scale(0.2); /* IE 9 */
+              -webkit-transform: scale(0.2); /* Safari */
+              transform: scale(0.2);
+              @extend %no-pointer;
+            }
+            #dirt-back-spray-2 {
+              position: absolute;
+              top: -305px;
+              left: -96px;
+              width: 800px;
+              -ms-transform: scale(0.2); /* IE 9 */
+              -webkit-transform: scale(0.2); /* Safari */
+              transform: scale(0.2);
+              @extend %no-pointer;
+            }
           }
         }
-        .dirt {
+        .dirt .background-wrap {
           @extend .elements;
           background-image: url('../img/elements/dirt/dirt-bg.jpg');
         }
@@ -1540,13 +1581,49 @@ footer {
           @extend .elements;
           background-image: url('../img/elements/snow/snow-bg.jpg');
           .element-wrap {
+            bottom: -468px;
+            .camera {
+              top: -1200px;
+              left: 93px;
+              width: 300px;
+            }
             .back {
-              top: -166px;
+              top: -143px;
               left: -79px;
+              width: 675px;
             }
             .front {
-              top: -110px;
+              top: -98px;
               left: -15px;
+            }
+            #snow-spray-front {
+              position: absolute;
+              top: -232px;
+              left: -4px;
+              -ms-transform: scale(0.2); /* IE 9 */
+              -webkit-transform: scale(0.2); /* Safari */
+              transform: scale(0.2);
+              @extend %no-pointer;
+            }
+            #snow-back-spray-1 {
+              position: absolute;
+              top: -232px;
+              left: -4px;
+              width: 600px;
+              -ms-transform: scale(0.2); /* IE 9 */
+              -webkit-transform: scale(0.2); /* Safari */
+              transform: scale(0.2);
+              @extend %no-pointer;
+            }
+            #snow-back-spray-2 {
+              position: absolute;
+              top: -100px;
+              left: -4px;
+              width: 519px;
+              -ms-transform: scale(0.2); /* IE 9 */
+              -webkit-transform: scale(0.2); /* Safari */
+              transform: scale(0.2);
+              @extend %no-pointer;
             }
           }
         }
@@ -1721,14 +1798,17 @@ footer {
     @media #{$screen} and (max-width: #{upper-bound($small-range)}) {
       #home {
         .elements {
+          position: relative;
           min-height: 737px !important;
+          .row {
+            position: initial;
+          }
           h2 {
             font-size: 12vw;
             line-height: 11vw;
           }
           .element-wrap {
-            bottom: initial;
-            top: 662px;
+            bottom: 0px;
             .back {
               left: 50%;
               margin-left: -295px;
@@ -1741,6 +1821,11 @@ footer {
               left: 50%;
               margin-left: -183px;
             }
+          }
+        }
+        .dirt {
+          #dirt-camera {
+            margin-left: -95px;
           }
         }
         .prefooter {

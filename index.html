@@ -168,49 +168,71 @@
 
 	    <!-- dirt -->
 	    <div class="elements dirt">
-	      <div class="row">
-	        <div class="small-12 medium-6 columns">
-	          <h2 class="large">DUSTPROOF<br>AND<br>SHOCKPROOF.</h2>
-	          <a href="#" class="button round slim">LEARN MORE</a>
-	        </div>
-	        <div class="element-wrap">
-	        	<div class="back">
-	        		<img src="img/elements/dirt/dirt-back.png" />
-	        	</div>
-	        	<div id="element-camera" class="camera" style="top: -1100px;">
-	        		<img src="img/elements/dirt/camera.png" />
-	        	</div>
-	        	<div class="front">
-	        		<img src="img/elements/dirt/dirt-front.png" />
-	        	</div>
-	        </div>
-	        <script type="text/javascript">
-	        </script>
-	      </div>
+	      	<div class="background-wrap">
+		      <div class="row">
+		        <div class="small-12 medium-6 columns">
+		          <h2 class="large">DUSTPROOF<br>AND<br>SHOCKPROOF.</h2>
+		          <a href="#" class="button round slim">LEARN MORE</a>
+		        </div>
+		        <div class="element-wrap">
+		        	<div class="back">
+		        		<img src="img/elements/dirt/dirt-back.png" />
+		        	</div>
+		        	<div id="dirt-back-spray-1">
+		        		<img src="img/elements/dirt/back-spray-1.png" />
+		        	</div>
+		        	<div id="dirt-back-spray-2">
+		        		<img src="img/elements/dirt/back-spray-2.png" />
+		        	</div>
+		        	<div id="dirt-camera" class="camera" style="top: -1100px;">
+		        		<img src="img/elements/dirt/camera.png" />
+		        	</div>
+		        	<div id="dirt-spray-front">
+		        		<img src="img/elements/dirt/front-spray.png" />
+		        	</div>
+		        	<div class="front">
+		        		<img src="img/elements/dirt/dirt-front.png" />
+		        	</div>
+		        </div>
+		        <script type="text/javascript">
+		        </script>
+		      </div>
+		    </div>
 	    </div>
 	    <!-- /elements -->
 
 	    <!-- snow --
 	    <div class="elements snow">
-	      <div class="row">
-	        <div class="small-12 medium-6 columns">
-	          <h2 class="large">SNOWPROOF<br>AND<br>SHOCKPROOF.</h2>
-	          <a href="#" class="button round slim">LEARN MORE</a>
-	        </div>
-	        <div class="element-wrap">
-	        	<div class="back">
-	        		<img src="img/elements/snow/snow-back.png" />
-	        	</div>
-	        	<div id="element-camera" class="camera" style="top: -1100px;">
-	        		<img src="img/elements/snow/camera.png" />
-	        	</div>
-	        	<div class="front">
-	        		<img src="img/elements/snow/snow-front.png" />
-	        	</div>
-	        </div>
-	        <script type="text/javascript">
-	        </script>
-	      </div>
+	    	<div class="background-wrap">
+		      <div class="row">
+		        <div class="small-12 medium-6 columns">
+		          <h2 class="large">SNOWPROOF<br>AND<br>SHOCKPROOF.</h2>
+		          <a href="#" class="button round slim">LEARN MORE</a>
+		        </div>
+		        <div class="element-wrap">
+		        	<div class="back">
+		        		<img src="img/elements/snow/snow-back.png" />
+		        	</div>
+		        	<div id="snow-back-spray-1">
+		        		<img src="img/elements/snow/left-back-spray.png" />
+		        	</div>
+		        	<div id="snow-back-spray-2">
+		        		<img src="img/elements/snow/right-back-spray.png" />
+		        	</div>
+		        	<div id="snow-camera" class="camera">
+		        		<img src="img/elements/snow/camera.png" />
+		        	</div>
+		        	<div id="snow-spray-front">
+		        		<img src="img/elements/snow/front-spray.png" />
+		        	</div>
+		        	<div class="front">
+		        		<img src="img/elements/snow/snow-front.png" />
+		        	</div>
+		        </div>
+		        <script type="text/javascript">
+		        </script>
+		      </div>
+			</div>
 	    </div>
 	    <!-- /snow -->
 
@@ -577,9 +599,7 @@
     		}
     	}
     );
-
     var fov_controller = new ScrollMagic.Controller();
-
     var fov_scene = new ScrollMagic.Scene({triggerElement: "#fov-wrap", triggerHook: "onEnter", duration: "130%"}).setTween(fov_tween).addTo(fov_controller);
 
     // point of view
@@ -617,15 +637,177 @@
     		}
     	}
     );
-
     var pov_controller = new ScrollMagic.Controller();
-
     var pov_scene = new ScrollMagic.Scene({triggerElement: ".pov", triggerHook: "onEnter", duration: "600"}).setTween(pov_tween).addTo(pov_controller);
 
+  
 
-	var elementController = new ScrollMagic.Controller();
-	var elementTween = TweenMax.to("#element-camera", 0.5, {ease: Power2.easeOut, top: "+=842"});
-	var elementScene = new ScrollMagic.Scene({triggerElement: ".elements", duration: "500"}).setTween(elementTween).addTo(elementController);
+	/* initiate animations */
+	function createAnimation() {
+		this.controller= new ScrollMagic.Controller();
+		this.scenes = [];
+	}
+
+	createAnimation.prototype = {
+		controller: null,
+		scenes: null,
+		constructor: createAnimation,
+		create: function(element, args){
+			element = typeof element === "string"
+            ? document.getElementById(element)
+            : element;
+			var tween = TweenMax.to(element, args.tween.duration, args.tween.options),
+				scene = new ScrollMagic.Scene(args.scene.options);
+
+			scene.setTween(tween)
+			scene.addTo(this.controller);
+
+			this.scenes.push(scene);
+
+			return this;
+		}
+	}
+
+	/* create dirt animations */
+	var dirtAnimation = new createAnimation();
+	dirtAnimation.create("dirt-camera", {
+		tween: {
+			duration: .5,
+			options: {
+				ease: Power2.easeOut,
+				top: "+=842",
+				rotation: 360
+			}
+		},
+		scene: {
+			options: {
+				triggerElement: ".elements",
+				duration: "500"
+			}
+		}
+	}).create("dirt-spray-front", {
+		tween: {
+			duration: .5,
+			options: {
+				css: {
+					scale: "1",
+					top: "-=100"
+				}
+			}
+		},
+		scene: {
+			options: {
+				triggerElement: ".elements",
+				offset: 335,
+				duration: "200"
+			}
+		}
+	}).create("dirt-back-spray-1", {
+		tween: {
+			duration: .5,
+			options: {
+				css: {
+					scale: "1",
+					top: "-=180"
+				}
+			}
+		},
+		scene: {
+			options: {
+				triggerElement: ".elements",
+				offset: 335,
+				duration: "200"
+			}
+		}
+	}).create("dirt-back-spray-2", {
+		tween: {
+			duration: .5,
+			options: {
+				css: {
+					scale: "1",
+					top: "-=254"
+				}
+			}
+		},
+		scene: {
+			options: {
+				triggerElement: ".elements",
+				offset: 335,
+				duration: "200"
+			}
+		}
+	});/**/
+
+	/* snow animation 
+	var snowAnimation = new createAnimation();
+	snowAnimation.create("snow-camera", {
+		tween: {
+			duration: .5,
+			options: {
+				ease: Power2.easeOut,
+				top: "+=860",
+				rotation: 360
+			}
+		},
+		scene: {
+			options: {
+				triggerElement: ".elements",
+				duration: "500"
+			}
+		}
+	}).create("snow-spray-front", {
+		tween: {
+			duration: .5,
+			options: {
+				css: {
+					scale: "1"
+				}
+			}
+		},
+		scene: {
+			options: {
+				triggerElement: ".elements",
+				offset: 335,
+				duration: "200"
+			}
+		}
+	}).create("snow-back-spray-1", {
+		tween: {
+			duration: .5,
+			options: {
+				css: {
+					scale: "1",
+					top: "-312",
+					left: "-331"
+				}
+			}
+		},
+		scene: {
+			options: {
+				triggerElement: ".elements",
+				offset: 335,
+				duration: "200"
+			}
+		}
+	}).create("snow-back-spray-2", {
+		tween: {
+			duration: .5,
+			options: {
+				css: {
+					scale: "1",
+					top: "-408",
+					left: "116"
+				}
+			}
+		},
+		scene: {
+			options: {
+				triggerElement: ".elements",
+				offset: 335,
+				duration: "200"
+			}
+		}
+	});/**/
   </script>
   
   </body>
