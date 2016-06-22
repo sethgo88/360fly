@@ -1643,21 +1643,40 @@ footer {
        line-height: rem-calc(39);
        margin-left: 184px !important;
       }
-      .app-slide h2 {
-        font-size: rem-calc(73);
-        line-height: rem-calc(64);
-        color: $primary-color !important;
-        font-weight: bold;
-        padding: 0 rem-calc(10);
-      }
-      .app-slide p {
-        font-size: rem-calc(30);
-        line-height: auto;
-        color: $steel;
-        padding: 0 rem-calc(10);
-      }
-      .app-slide .app-links {
-        padding: 0 rem-calc(10);
+      .app-slide {
+        h2 {
+          font-size: rem-calc(73);
+          line-height: rem-calc(64);
+          color: $primary-color !important;
+          @extend h2.bold;
+          padding: 0 rem-calc(10);
+        }
+        p {
+          font-size: rem-calc(30);
+          line-height: auto;
+          color: $steel;
+          padding: 0 rem-calc(10);
+        }
+        .app-links {
+          padding: 0 rem-calc(10);
+          white-space: nowrap;
+          a { 
+            margin-right: rem-calc(10);
+          }
+        }
+        .app-links.apple {
+          .android {
+            display: none;
+          }
+        }
+        .app-links.android {
+          .apple {
+            display: none;
+          }
+        }
+        img.app-type {
+          padding: rem-calc(10);
+        }
       }
       .ls-pbg {
         min-height: 110%;
@@ -1742,7 +1761,7 @@ footer {
       }
     }
 
-    @media screen and (min-width: 1620px) {
+    @media screen and (min-width: 1713px) {
       #home .video-player {
         background-color: #000;
         background-size: contain;
