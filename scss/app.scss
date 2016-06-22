@@ -1678,6 +1678,39 @@ footer {
           padding: rem-calc(10);
         }
       }
+      .trump-ad {
+        h2 {
+          @extend h2.bold;
+          font-size: rem-calc(88.8);
+          line-height: rem-calc(82.7);
+        }
+        p {
+          color: $white;
+          font-size: rem-calc(59.6);
+          line-height: initial;
+          text-align: center;
+        }
+        #trump-trigger {
+          font-size: rem-calc(38);
+          line-height: rem-calc(71);
+          height: rem-calc(71);
+          width: rem-calc(316);
+          padding: 0px;
+        }
+      }
+      #trump-ad {
+        position: relative;
+        pointer-events: none;
+        iframe {
+          pointer-events: initial;
+          box-shadow: 0px 0px 15px $black;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+      }
       .ls-pbg {
         min-height: 110%;
       }
