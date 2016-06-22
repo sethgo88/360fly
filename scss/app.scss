@@ -1534,6 +1534,7 @@ footer {
               left: 173px;
               width: 200px;
               pointer-events: none;
+              opacity: 0;
             }
             .front {
               position: absolute;
@@ -1699,9 +1700,8 @@ footer {
     #hero-slider {
       background-color: $black;
       h2 {
-        font-size: rem-calc(81);
+        font-size: rem-calc(88);
         color: $white !important;
-        font-align: center;
       }
       h2.bold {
         font-family: 'FlySans-Bold', Arial, sans-serif;
@@ -1718,7 +1718,6 @@ footer {
       h2.small-4k {
        font-size: rem-calc(41.5);
        line-height: rem-calc(39);
-       margin-left: 184px !important;
       }
       .app-slide {
         h2 {
@@ -1756,14 +1755,18 @@ footer {
         }
       }
       .trump-ad {
+        .ls-bg {
+          margin-top: 0px !important;
+          background-position: top center;
+        }
         h2 {
           @extend h2.bold;
-          font-size: rem-calc(88.8);
-          line-height: rem-calc(82.7);
+          font-size: rem-calc(69.3);
+          line-height: rem-calc(64.5);
         }
         p {
           color: $white;
-          font-size: rem-calc(59.6);
+          font-size: rem-calc(46.5);
           line-height: initial;
           text-align: center;
         }
@@ -1845,12 +1848,6 @@ footer {
         }
       }
 
-    }
-
-    @media screen and (max-width: 1016px){
-      #hero-slider h2.small-4k {
-        margin-left: 18% !important;
-      }
     }
 
     @media screen and (max-width: 1024px){
