@@ -434,7 +434,17 @@
 				globalBGColor: 'black',
 				navStartStop: false,
 				thumbnailNavigation: 'disabled',
-        		autoPlayVideos: false
+        		autoPlayVideos: false,
+        		cbPrev : function () {
+        			if( $('#trump-ad').children().length > 0 ){
+        				$('#trump-ad').find('iframe').remove();
+        			}
+        		},
+        		cbNext : function () {
+        			if( $('#trump-ad').children().length > 0 ){
+        				$('#trump-ad').find('iframe').remove();
+        			}
+        		}
 			});
 			if(navigator.userAgent.toLowerCase().indexOf("android") > -1){
          		$('.app-slide').append("<a href='https://play.google.com/store/apps/details?id=com.livitnow.livit&hl=en' class='ls-link'></a>");
