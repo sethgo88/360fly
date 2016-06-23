@@ -1439,7 +1439,6 @@ footer {
           background-repeat: no-repeat;
           background-position: center;
           background-size: cover;
-          background-attachment: fixed;
           padding: rem-calc(95) 0 rem-calc(48);
           .valign-middle {
             padding: rem-calc(107) 0;
@@ -1487,7 +1486,7 @@ footer {
             position: absolute;
             width: 2000px;
             left: -900px;
-            top: -242px;
+            top: -182px;
             pointer-events: none;
           }
           .pov-mobile {
@@ -1495,7 +1494,7 @@ footer {
           }
         }
         .elements {
-          padding-bottom: rem-calc(26);
+          padding-bottom: rem-calc(50);
           overflow: hidden;
           .background-wrap {
             overflow: visible !important;
@@ -1564,7 +1563,7 @@ footer {
             }
             #dirt-back-spray-2 {
               position: absolute;
-              top: -305px;
+              top: -325px;
               left: -96px;
               width: 800px;
               -ms-transform: scale(0.2); /* IE 9 */
@@ -1642,7 +1641,6 @@ footer {
           background-repeat: no-repeat;
           background-position: center;
           background-size: cover;
-          background-attachment: fixed;
           padding: rem-calc(75) 0;
           h2 {
             @extend %hometitle;
@@ -1709,8 +1707,7 @@ footer {
       h2.large-4k {
         font-size: rem-calc(192);
         line-height: rem-calc(192);
-        @extend h2.bold;
-      }
+        @extend h2.bold;      }
       h2.large-4k span {
         font-size:  40%;
         vertical-align: top; 
@@ -1722,14 +1719,14 @@ footer {
       .app-slide {
         h2 {
           font-size: rem-calc(73);
-          line-height: rem-calc(64);
+          line-height: rem-calc(71);
           color: $primary-color !important;
           @extend h2.bold;
           padding: 0 rem-calc(10);
         }
         p {
           font-size: rem-calc(30);
-          line-height: auto;
+          line-height: rem-calc(34);
           color: $steel;
           padding: 0 rem-calc(10);
         }
@@ -1767,7 +1764,7 @@ footer {
         p {
           color: $white;
           font-size: rem-calc(46.5);
-          line-height: initial;
+          line-height: rem-calc(50);
           text-align: center;
         }
         #trump-trigger {
@@ -1853,7 +1850,6 @@ footer {
     @media screen and (max-width: 1024px){
       #home {
         .fov {
-          background-attachment: scroll;
           padding-top: rem-calc(48);
           .text-right {
             text-align: left !important;
@@ -1861,9 +1857,6 @@ footer {
           .valign-middle {
             padding: 0px;
           }
-        }
-        .prefooter {
-          background-attachment: scroll;
         }
       }
     }
