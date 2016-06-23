@@ -465,6 +465,46 @@
   			imageObject.src = imageArray[i];
   		}
   	}
+
+    // point of view
+    var pov_images = [
+    	"../img/parallax/pov/pov__imagesequence_01.png",
+    	"../img/parallax/pov/pov__imagesequence_02.png",
+    	"../img/parallax/pov/pov__imagesequence_03.png",
+    	"../img/parallax/pov/pov__imagesequence_04.png",
+    	"../img/parallax/pov/pov__imagesequence_05.png",
+    	"../img/parallax/pov/pov__imagesequence_06.png",
+    	"../img/parallax/pov/pov__imagesequence_07.png",
+    	"../img/parallax/pov/pov__imagesequence_08.png",
+    	"../img/parallax/pov/pov__imagesequence_09.png",
+    	"../img/parallax/pov/pov__imagesequence_10.png",
+    	"../img/parallax/pov/pov__imagesequence_11.png",
+    	"../img/parallax/pov/pov__imagesequence_12.png",
+    	"../img/parallax/pov/pov__imagesequence_13.png",
+    	"../img/parallax/pov/pov__imagesequence_14.png",
+    	"../img/parallax/pov/pov__imagesequence_15.png",
+    	"../img/parallax/pov/pov__imagesequence_16.png",
+    	"../img/parallax/pov/pov__imagesequence_17.png",
+    	"../img/parallax/pov/pov__imagesequence_18.png"
+    ];
+    preloadImages(pov_images);
+
+    var pov_obj = {curImg: 0};
+    var pov_tween = TweenMax.to(pov_obj, 0.5,
+    	{
+    		curImg: pov_images.length -1,
+    		roundProps: "curImg",
+    		repeat: 0,
+    		immediateRender: true,
+    		ease: Linear.easeNone,
+    		onUpdate: function () {
+    			$('#pov-wrap img').attr("src", pov_images[pov_obj.curImg]);
+    		}
+    	}
+    );
+    var pov_controller = new ScrollMagic.Controller();
+    var pov_scene = new ScrollMagic.Scene({triggerElement: ".pov", triggerHook: "onEnter", duration: "500", offset: 300}).setTween(pov_tween).addTo(pov_controller);
+    
     //field of view
     var fov_images = [
     	"../img/parallax/fov/fov__imagesequence_01.png",
@@ -610,46 +650,6 @@
     );
     var fov_controller = new ScrollMagic.Controller();
     var fov_scene = new ScrollMagic.Scene({triggerElement: "#fov-wrap", triggerHook: "onEnter", duration: "130%"}).setTween(fov_tween).addTo(fov_controller);
-
-    // point of view
-    var pov_images = [
-    	"../img/parallax/pov/pov__imagesequence_01.png",
-    	"../img/parallax/pov/pov__imagesequence_02.png",
-    	"../img/parallax/pov/pov__imagesequence_03.png",
-    	"../img/parallax/pov/pov__imagesequence_04.png",
-    	"../img/parallax/pov/pov__imagesequence_05.png",
-    	"../img/parallax/pov/pov__imagesequence_06.png",
-    	"../img/parallax/pov/pov__imagesequence_07.png",
-    	"../img/parallax/pov/pov__imagesequence_08.png",
-    	"../img/parallax/pov/pov__imagesequence_09.png",
-    	"../img/parallax/pov/pov__imagesequence_10.png",
-    	"../img/parallax/pov/pov__imagesequence_11.png",
-    	"../img/parallax/pov/pov__imagesequence_12.png",
-    	"../img/parallax/pov/pov__imagesequence_13.png",
-    	"../img/parallax/pov/pov__imagesequence_14.png",
-    	"../img/parallax/pov/pov__imagesequence_15.png",
-    	"../img/parallax/pov/pov__imagesequence_16.png",
-    	"../img/parallax/pov/pov__imagesequence_17.png",
-    	"../img/parallax/pov/pov__imagesequence_18.png"
-    ];
-    preloadImages(pov_images);
-
-    var pov_obj = {curImg: 0};
-    var pov_tween = TweenMax.to(pov_obj, 0.5,
-    	{
-    		curImg: pov_images.length -1,
-    		roundProps: "curImg",
-    		repeat: 0,
-    		immediateRender: true,
-    		ease: Linear.easeNone,
-    		onUpdate: function () {
-    			$('#pov-wrap img').attr("src", pov_images[pov_obj.curImg]);
-    		}
-    	}
-    );
-    var pov_controller = new ScrollMagic.Controller();
-    var pov_scene = new ScrollMagic.Scene({triggerElement: ".pov", triggerHook: "onEnter", duration: "500", offset: 300}).setTween(pov_tween).addTo(pov_controller);
-
   
 
 	/* initiate animations */
